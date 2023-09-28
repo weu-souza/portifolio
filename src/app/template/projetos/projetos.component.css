@@ -1,0 +1,15 @@
+.projetos{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.experiencia-texto {
+  /*font-size: 1.5rem;*/
+  /*line-height: 1.33;*/
+  max-width: 40ch;
+  margin-bottom: 60px;
+
+}
