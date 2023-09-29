@@ -24,6 +24,14 @@
   border-bottom-right: 4px solid var(--cor-07);
 
 }
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+.link:hover {
+  border-bottom:2px solid #000;
+}
 .empresa-ano {
   position: absolute;
   top: 22px;
