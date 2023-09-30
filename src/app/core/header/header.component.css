@@ -52,5 +52,13 @@
   }
 
 }
+@media(max-width: 400px){
+  .header{
+    justify-content: center;
+  }
+  .mobile{
+    display: none;
+  }
+}
 
 
