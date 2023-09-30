@@ -14,19 +14,18 @@
   justify-content: center;
 }
 
-.header-menu a {
+.navegacao {
   padding: 10px 20px;
   text-decoration: none;
   display: block;
-
+  border-bottom: 2px solid #fff;
 }
 
-.header-menu a:hover {
-  border-bottom: 2px solid var(--cor-03);
+.navegacao:hover {
   border-color: var(--cor-03);
 }
 .active-link{
-  border-bottom: 2px solid var(--cor-03);
+  border-color: var(--cor-03);
 }
 
 @media (max-width: 800px ) {

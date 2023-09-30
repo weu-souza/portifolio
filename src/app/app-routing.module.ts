@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ExperienciaComponent} from "./template/experiencia/experiencia.component";
-import {FormacaoComponent} from "./template/formacao/formacao.component";
-import {SobreMimComponent} from "./template/sobre-mim/sobre-mim.component";
-import {ProjetosComponent} from "./template/projetos/projetos.component";
+import {ExperienciaComponent} from "./template/experiencia/page/experiencia.component";
+import {FormacaoComponent} from "./template/formacao/page/formacao.component";
+import {SobreMimComponent} from "./template/sobre-mim/page/sobre-mim.component";
+import {ProjetosComponent} from "./template/projetos/page/projetos.component";
 
 const routes: Routes = [
   {path: 'experiencia', component: ExperienciaComponent},
