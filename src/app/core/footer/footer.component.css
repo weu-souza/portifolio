@@ -4,6 +4,7 @@
 }
 
 .footer-container {
+  display: flex;
   padding: 50px 20px 60px 20px;
   gap: 100px;
   align-items: center;
@@ -17,27 +18,29 @@
 
 }
 
-
-
+.mobile {
+  display: none;
+}
 
 
 @media (max-width: 800px) {
   .footer-container {
-    grid-template-columns: 1fr;
+    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 30px 10px 30px 10px;
     gap: 40px;
-    justify-items: initial;
+  }
+}
+
+@media (max-width: 700px) {
+  .mobile {
+    display: inline;
+    color: #e0e0e0;
   }
 
-  .footer-contato a {
-    border: none;
-  }
-
-  .footer-contato a:hover {
-    border: none;
-  }
-
-  .footer-contato li {
-    font-size: 1.5rem;
+  .footer-container p {
+    display: none;
   }
 
 }

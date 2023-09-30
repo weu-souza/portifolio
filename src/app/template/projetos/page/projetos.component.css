@@ -6,3 +6,24 @@
   grid-template-columns: 1fr 2fr;
 }
 
+@media (max-width: 800px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+  }
+
+  .projetos .subtitulo {
+    color: #141414;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  .projetos {
+    grid-template-columns: 1fr;
+
+  }
+}
+

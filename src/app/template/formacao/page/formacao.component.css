@@ -81,12 +81,12 @@
 }
 
 .cursos h3::before {
-  background: url("/src/assets/img/cursos.svg") no-repeat center center;
+  background: url("src/assets/img/cursos.svg") no-repeat center center;
 
 }
 
 .idiomas h3::before {
-  background: url("/src/assets/img/idiomas.svg") no-repeat center center;
+  background: url("src/assets/img/idiomas.svg") no-repeat center center;
 }
 
 .formacao-extra li {
@@ -108,7 +108,7 @@
   }
 
   .formacao .subtitulo {
-    color: #FFFFFF;
+    color: #000;
   }
 
   .formacao-texto {
