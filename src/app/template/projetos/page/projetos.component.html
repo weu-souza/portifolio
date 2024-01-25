@@ -1,12 +1,12 @@
 <section class="projetos">
   <div><h2 class="subtitulo cor-06 "> Projetos</h2></div>
 
-  <div class="flex flex-wrap">
-    <p-card *ngFor="let pro of projeto" [header]="pro.titulo" [style]="{ width: '300px' }" class="mx-4 my-4">
+  <div class="flex flex-wrap flex-1">
+    <p-card *ngFor="let pro of projeto" [header]="pro.titulo" [style]="{ width: '400px' }" class="mx-4 my-4">
     <ng-template pTemplate="header">
       <img alt="Card" [src]="pro.imagem" class="p-2"/>
     </ng-template>
-    <p >
+    <p>
       {{pro.descricao}}
     </p>
     <ng-template pTemplate="footer">
