@@ -6,13 +6,14 @@ import {SobreMimComponent} from "./template/sobre-mim/page/sobre-mim.component";
 import {ProjetosComponent} from "./template/projetos/page/projetos.component";
 
 const routes: Routes = [
+  {
+    path: '', redirectTo: 'sobre', pathMatch: 'full'
+  },
   {path: 'experiencia', component: ExperienciaComponent},
   {path: 'formacao', component: FormacaoComponent},
   {path: 'sobre', component:SobreMimComponent},
   {path: 'projetos', component:ProjetosComponent},
-  {
-    path: '', redirectTo: 'sobre', pathMatch: 'full'
-  }
+
 
 ];
 
