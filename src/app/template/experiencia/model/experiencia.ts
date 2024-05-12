@@ -29,11 +29,11 @@ export const experiencia: Iexperiencia[] = [
     linguagem: ['angular', 'scss', '.NET', 'PrimeNG'],
     ano: 2023
   },
-  // {
-  //   titulo: 'Compass.uol',
-  //   cargo: 'Desenvolvedor Front End Estagio',
-  //   descricao: '',
-  //   linguagem: ['React', 'Html', 'Css', 'Javascript', 'Typescript', 'Aws', 'git & github', 'Scrum'],
-  //   ano: 2024
-  // },
+  {
+    titulo: 'Compass.uol',
+    cargo: 'Desenvolvedor Front End Estagio',
+    descricao: 'Atuando como estagiario onde estou aprendendo e aplicando meus conhecimentos no desenvolvimento de aplicações front end.',
+    linguagem: ['React', 'Html', 'Css', 'Javascript', 'Typescript', 'Aws', 'git & github', 'Scrum'],
+    ano: 2024
+  },
 ]
