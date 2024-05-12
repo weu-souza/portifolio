@@ -1,3 +1,5 @@
+este e o meu portifolio, está online com o github pages para acessar basta ir ao site: https://weu-souza.github.io/portifolio
+
 # Portifolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
