@@ -5,8 +5,7 @@
       <span class="empresa-ano cor-01 fonte-1"> {{exp.ano}}</span>
       <h3 class="empresa-titulo fonte-2 line-1">{{exp.titulo}}</h3>
       <span class="empresa-titulo fonte-2 line-1">{{exp.cargo}}</span>
-      <p class=" cor-01 fonte-1 line-5">{{exp.descricao}} <a routerLink="/projetos" class="cor-03 link">projetos</a>
-      </p>
+      <p class=" cor-01 fonte-1 line-5">{{exp.descricao}}</p>
       <ul class="empresa-habilidades"  >
         <li class="fonte-1 line-5 px-2" *ngFor="let ling of exp.linguagem">{{ling}}</li>
       </ul>
