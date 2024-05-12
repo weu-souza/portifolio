@@ -3,7 +3,7 @@
   padding: 40px 20px 200px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns:1fr 2fr;
+  grid-template-rows: 1fr auto;
   gap: 100px;
 }
 
@@ -12,6 +12,10 @@
   /*line-height: 1.125;*/
   margin-bottom: 30px;
   position: relative;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  color: #787878
+
 }
 
 .introducao h1::before {
@@ -25,11 +29,6 @@
   z-index: -1;
 }
 
-.introducao p {
-  /*font-size: 1.5rem;*/
-  /*color: #525252;*/
-}
-
 @media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
@@ -38,8 +37,13 @@
 
 @media (max-width: 800px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 50px;
+  }
+  .skills{
+    display:grid!important;
+    grid-template-rows: 1fr 1fr 1fr !important;
+
   }
 
   .introducao h1 {
