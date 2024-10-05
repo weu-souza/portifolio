@@ -1,10 +1,29 @@
+@import 'variable';
+@import 'mixins';
+header{
+    background: $primary;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
 nav{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    a{
+        @include poppins-semibold;
+        color: $text-button;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
     ul{
         display: flex;
         flex-flow: row wrap;
-        gap: 20px;
-        li{
-            cursor: pointer;
-        }
+        gap: 40px;
+        flex-flow: row wrap;
+        
     }
 }

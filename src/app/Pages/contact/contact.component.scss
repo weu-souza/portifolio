@@ -1,85 +1,106 @@
-@import 'mixins';
-@import 'variable';
+@import "mixins";
+@import "variable";
 
-section{
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 80px;
+  gap: 40px;
+
+  .text-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 80px;
+    gap: 50px;
+    flex-flow: column;
+    .social-container{
+      display: flex;
+      flex-flow: column;
+      h3 {
+        @include poppins-semibold;
+        color: $primary;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        .contact-icons {
+          font-size: 20px;
+          i {
+            color: $background;
+          }
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      margin: 0 20px;
+    }
+    h1 {
+      @include poppins-semibold;
+      color: $primary;
+      font-size: 50px;
+    }
+    p {
+      @include poppins-regular;
+      color: $primary;
+      font-size: 16px;
+      max-width: 50ch;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background: $text-button;
     gap: 40px;
-    div{
-        display: flex;
-        gap: 10px;
-        flex-flow: column;
-        @media (max-width:800px) {
-            margin: 0 20px;
-        }
-        h1{
-            @include poppins-semibold;
-            color:$primary;
-            font-size: 50px;
-        }
-        p{
-            @include poppins-regular;
-            color: $primary;
-            font-size: 16px;
-            max-width: 50ch;
-        }
+    max-width: 600px;
+    width: 100%;
+    @media (max-width: 800px) {
+      margin: 0 20px;
     }
-    
-    form{
-        display: flex;
-        flex-direction: column;
-        background: $text-button;
-        gap:40px;
-        max-width: 650px;
-        width: 100%;
-        @media (max-width:800px) {
-            margin: 0 20px;
-        }
-        @include boxShadow(1px,1px,3px,2px,0.3);
-        padding: 30px;
-        border-radius: 20px;
-        label{
-            @include poppins-semibold;
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            color: $primary;
-            input{
-                @include roboto-regular;
-                font-size: 16px;
-                @include boxShadow(1px,1px,2px,1px,0.2);
-                padding: 15px;
-                color: $primary;
-                border-radius: 5px;
-            }
-            textarea{
-                @include roboto-regular;
-               @include boxShadow(1px,1px,2px,1px,0.2);
-                font-weight: 400;
-                font-size: 16px;
-                padding: 8px;
-                height: 100px;
-                border-radius: 5px;
-                color: $primary;
-                outline: none;
-                resize: none;
-            }
-        }
-    
-        .button{
-            @include poppins-semibold;
-            font-size: 16px;
-            background: $buttonBg;
-            color: $text-button;
-    
-            padding: 15px 80px;
-            border-radius: 32px;
-            align-self: flex-end;
-            cursor: pointer;
-        }
-        
+    @include boxShadow(1px, 1px, 3px, 2px, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    label {
+      @include poppins-semibold;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: $primary;
+      input {
+        @include roboto-regular;
+        font-size: 16px;
+        @include boxShadow(1px, 1px, 2px, 1px, 0.2);
+        padding: 15px;
+        color: $primary;
+        border-radius: 5px;
+      }
+      textarea {
+        @include roboto-regular;
+        @include boxShadow(1px, 1px, 2px, 1px, 0.2);
+        font-weight: 400;
+        font-size: 16px;
+        padding: 8px;
+        height: 100px;
+        border-radius: 5px;
+        color: $primary;
+        outline: none;
+        resize: none;
+      }
     }
+
+    .button {
+      @include poppins-semibold;
+      font-size: 16px;
+      background: $buttonBg;
+      color: $text-button;
+
+      padding: 15px 80px;
+      border-radius: 32px;
+      align-self: flex-end;
+      cursor: pointer;
+    }
+  }
 }

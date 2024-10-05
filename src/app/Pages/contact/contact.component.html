@@ -1,22 +1,60 @@
 <section>
+  <div class="text-container">
     <div>
-        <h1>Contato</h1>
-        <p>Caso tenha gostado do meu trabalho, Entre em contato comigo e marcamos uma conversa.</p>
+      <h1>Contato</h1>
+      <p>
+        Caso tenha gostado do meu trabalho, Entre em contato comigo e marcamos
+        uma conversa.
+      </p>
     </div>
+    <div class="social-container">
+      <h3>Minhas redes sociais</h3>
+      <ul class="footer-contato flex align-self-end">
+        <li class="contact-icons">
+          <a href="https://wa.me/5561982995230"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </li>
+        <li class="contact-icons">
+          <a href="https://www.instagram.com/lord_weu">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="contact-icons">
+          <a href="https://github.com/weu-souza"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li class="contact-icons">
+          <a href="https://www.linkedin.com/in/weuller-souza-6b49aa120/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <form  [formGroup]="contact" (ngSubmit)="send()">
-        <label for="">
-            <span>Nome</span>
-            <input type="text" formControlName="name" placeholder="Seu nome">
-        </label>
-        <label for="">
-            <span>Email</span>
-            <input type="text" formControlName="email" placeholder="email@email.com">
-        </label>
-        <label for="">
-            <span>Mensagem</span>
-            <textarea  type="text" formControlName="message" placeholder="Digite sua mensagem..."></textarea>
-        </label>
-        <input class="button" type="submit" >
-    </form>
+  <form [formGroup]="contact" (ngSubmit)="send()">
+    <label for="">
+      <span>Nome</span>
+      <input type="text" formControlName="name" placeholder="Seu nome" />
+    </label>
+    <label for="">
+      <span>Email</span>
+      <input
+        type="text"
+        formControlName="email"
+        placeholder="email@email.com"
+      />
+    </label>
+    <label for="">
+      <span>Mensagem</span>
+      <textarea
+        type="text"
+        formControlName="message"
+        placeholder="Digite sua mensagem..."
+      ></textarea>
+    </label>
+    <input class="button" type="submit" />
+  </form>
 </section>
