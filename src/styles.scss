@@ -1,9 +1,18 @@
+@import "primeng/resources/themes/mdc-light-deeppurple/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+p-toast {
+  margin: initial !important;
+  border: initial !important;
+  padding: initial !important;
+}
 /* reset css */
-* {
+ body,input,h1,h2,h3,h4,a,li,ul,ol,textarea,label,span,p{
     margin: 0;
     border: 0;
     padding: 0;
   }
+  
   input {
     outline: none;
   }

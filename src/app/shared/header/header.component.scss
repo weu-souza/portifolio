@@ -1,5 +1,5 @@
-@import 'variable';
-@import 'mixins';
+@import '../../shared//utils/scss/variable.scss';
+@import '../../shared//utils/scss/mixins';
 header{
     background: $primary;
     padding: 30px;

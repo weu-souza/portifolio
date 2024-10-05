@@ -1,5 +1,5 @@
-@import "mixins";
-@import "variable";
+@import "../../shared//utils/scss/mixins";
+@import "../../shared//utils/scss/variable";
 
 section {
   display: flex;
@@ -7,7 +7,12 @@ section {
   justify-content: space-around;
   margin-top: 80px;
   gap: 40px;
-
+  h4 {
+    @include poppins-semibold;
+    color: $primary;
+    font-size: 20px;
+    text-align: center;
+  }
   .text-container {
     display: flex;
     gap: 50px;
@@ -103,4 +108,10 @@ section {
       cursor: pointer;
     }
   }
+}
+
+.erro{
+  color: red;
+  @include poppins-regular;
+  font-size:14px;
 }
