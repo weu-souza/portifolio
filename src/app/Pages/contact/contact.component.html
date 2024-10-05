@@ -1,1 +1,22 @@
-<p>contact works!</p>
+<section>
+    <div>
+        <h1>Contato</h1>
+        <p>Caso tenha gostado do meu trabalho, Entre em contato comigo e marcamos uma conversa.</p>
+    </div>
+
+    <form  [formGroup]="contact" (ngSubmit)="send()">
+        <label for="">
+            <span>Nome</span>
+            <input type="text" formControlName="name" placeholder="Seu nome">
+        </label>
+        <label for="">
+            <span>Email</span>
+            <input type="text" formControlName="email" placeholder="email@email.com">
+        </label>
+        <label for="">
+            <span>Mensagem</span>
+            <textarea  type="text" formControlName="message" placeholder="Digite sua mensagem..."></textarea>
+        </label>
+        <input class="button" type="submit" >
+    </form>
+</section>
