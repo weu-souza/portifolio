@@ -1,0 +1,10 @@
+nav{
+    ul{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        li{
+            cursor: pointer;
+        }
+    }
+}
