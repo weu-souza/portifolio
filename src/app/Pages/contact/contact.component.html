@@ -38,10 +38,10 @@
     <h4>Me mande um email</h4>
     <label for="">
       <span>Nome</span>
-      <input type="text" formControlName="name" placeholder="Seu nome" />
+      <input type="text" formControlName="from_name" placeholder="Seu nome" />
 
-      <span *ngIf=" contact.controls['name'].invalid &&
-           (contact.controls['name'].touched || contact.controls['name'].dirty)">
+      <span *ngIf=" contact.controls['from_name'].invalid &&
+           (contact.controls['from_name'].touched || contact.controls['from_name'].dirty)">
         <span class="erro" 
           >nome precisa ser preenchido</span
         >

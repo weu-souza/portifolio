@@ -3,11 +3,13 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { Contact } from './Api/model/contact';
 import { ToastServiceService } from '../../shared/utils/service/toast-service.service';
 import { CommonModule } from '@angular/common';
+import { ContactService } from './Api/service/contact.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [CommonModule,ReactiveFormsModule],
+  providers:[ContactService],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -17,7 +19,8 @@ export class ContactComponent implements OnInit {
   IContact: Contact = new Contact();
   constructor(
     private fb: FormBuilder,
-    private toast:ToastServiceService
+    private toast:ToastServiceService,
+    private contactService:ContactService
   ) {}
 
   ngOnInit(): void {
@@ -26,7 +29,7 @@ export class ContactComponent implements OnInit {
 
   createForm() {
     this.contact = this.fb.group({
-      name: ['', [Validators.required,]],
+      from_name: ['', [Validators.required,]],
       email: ['', [Validators.required,Validators.email]],
       message: ['', [Validators.required,]],
     });
@@ -35,8 +38,8 @@ export class ContactComponent implements OnInit {
   send() {
     if (this.contact.dirty && this.contact.valid) {
       this.IContact = Object.assign({}, this.IContact, this.contact.value);
-      this.toast.success("Email enviado","aguarde alguns dias e eu te retornarei.")
-      console.log(this.IContact);
+      this.contactService.send(this.IContact)
+      this.contact.reset()
     }
     else{
       this.toast.warn('Não enviado','formulario invalido')
