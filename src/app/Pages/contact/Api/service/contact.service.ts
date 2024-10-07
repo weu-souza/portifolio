@@ -10,7 +10,7 @@ export class ContactService {
   constructor(private toast: ToastServiceService) {}
 
   send(email: Contact) {
-    emailjs.init(environment.API_KEY);
+    // emailjs.init(environment.API_KEY);
     emailjs
       .send(environment.SERVICE_ID, environment.TEMPLATE_ID, {
         from_name: email.from_name,

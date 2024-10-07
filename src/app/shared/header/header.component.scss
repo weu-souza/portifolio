@@ -5,6 +5,11 @@ header{
     padding: 30px;
     display: flex;
     justify-content: center;
+    @media (max-width:500px) {
+        .header-mobile{
+            display: none;
+        }
+    }
 }
 nav{
     max-width: 1200px;

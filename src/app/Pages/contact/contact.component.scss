@@ -5,12 +5,10 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-top: 80px;
+
   gap: 40px;
   h4 {
-    @include poppins-semibold;
-    color: $primary;
-    font-size: 20px;
+   @include subtitle;
     text-align: center;
   }
   .text-container {
@@ -21,9 +19,7 @@ section {
       display: flex;
       flex-flow: column;
       h3 {
-        @include poppins-semibold;
-        color: $primary;
-        font-size: 20px;
+       @include subtitle;
         margin-bottom: 10px;
       }
       ul {
@@ -42,15 +38,10 @@ section {
       margin: 0 20px;
     }
     h1 {
-      @include poppins-semibold;
-      color: $primary;
-      font-size: 50px;
+      @include Title
     }
     p {
-      @include poppins-regular;
-      color: $primary;
-      font-size: 16px;
-      max-width: 50ch;
+      @include pageParagraph;
     }
   }
 
@@ -97,15 +88,7 @@ section {
     }
 
     .button {
-      @include poppins-semibold;
-      font-size: 16px;
-      background: $buttonBg;
-      color: $text-button;
-
-      padding: 15px 80px;
-      border-radius: 32px;
-      align-self: flex-end;
-      cursor: pointer;
+     @include button(15px, 80px)
     }
   }
 }

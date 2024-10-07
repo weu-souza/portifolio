@@ -36,3 +36,33 @@
   @mixin boxShadow($first,$second,$third,$fourth,$alpha){
     box-shadow: $first $second $third $fourth rgba($color: #737373, $alpha: $alpha);
   }
+
+  @mixin button($paddingy, $paddingx){
+    @include poppins-semibold;
+    font-size: 16px;
+    background: $buttonBg;
+    color: $text-button;
+
+    padding: $paddingy $paddingx;
+    border-radius: 32px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  @mixin Title{
+    @include poppins-semibold;
+      color: $primary;
+      font-size: 50px;
+  }
+
+  @mixin subtitle{
+    @include poppins-semibold;
+    color: $primary;
+    font-size: 20px;
+  }
+  @mixin pageParagraph{
+    @include poppins-regular;
+      color: $primary;
+      font-size: 16px;
+      max-width: 50ch;
+  }
