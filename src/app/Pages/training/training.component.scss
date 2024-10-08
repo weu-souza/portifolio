@@ -8,8 +8,23 @@ main {
     .scrool{
         padding: 0 20px;
         overflow-y: scroll;
-        height: 280px;
+        height: 350px;
     }
+    .scrool::-webkit-scrollbar {
+        width: 6px;
+        
+      }
+      
+      .scrool::-webkit-scrollbar-track{
+      margin-block: .5em;
+      border-radius: 100vw;
+      }
+      
+      .scrool::-webkit-scrollbar-thumb{
+        background: #898989;
+        border-radius: 30px;
+      
+      }
 
     @media (max-width:800px) {
         grid-template-columns: 1fr;
@@ -123,18 +138,3 @@ main {
 
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  ::-webkit-scrollbar-track{
-  background: #d9d9d9;
-  margin-block: .5em;
-  border-radius: 100vw;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: #898989;
-    border-radius: 30px;
-  
-  }
