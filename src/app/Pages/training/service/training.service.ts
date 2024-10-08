@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { TrainingClass, TrainingObj } from '../Api/model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TrainingService {
+  training: TrainingClass[] = TrainingObj;
+  constructor() {}
 
-  constructor() { }
+  getTraining(): Observable<TrainingClass[]> {
+    return of(this.training);
+  }
+
 }

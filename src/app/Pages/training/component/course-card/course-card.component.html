@@ -1,0 +1,16 @@
+<div class="course-cards">
+    <div class="course-top">
+        <h2>{{course.Title}}</h2>
+        <button (click)="openCloseButtonClick()"><i [ngClass]="openCloseArrowChange()"></i>  <i class=""></i></button>
+    </div>
+    <div class="course-bottom" *ngIf="openCloseCard" >
+        <div class="course-name">
+            <h3>Nome</h3>
+            <p *ngFor="let course of course.Course"><a href="{{course.Link}}">{{course.name}}</a></p>
+        </div>
+        <div class="course-link">
+            <h3>Ano</h3>
+            <p *ngFor="let course of course.Course">{{course.date}}</p>
+        </div>
+    </div>
+</div>    

@@ -1,0 +1,60 @@
+@import '../../../../shared/utils/scss/mixins.scss';
+@import '../../../../shared/utils/scss/variable.scss';
+.course-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .course-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            @include subtitle;
+            font-size: 20px;
+        }
+
+        button {
+            @include button(3px, 16px);
+            background: $primary;
+            border: none;
+        }
+
+    }
+
+    .course-bottom {
+        background: $text-button;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        border-radius: 16px;
+        margin-bottom: 10px;
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            @include pageParagraph;
+            font-size: 14px;
+        }
+        a{
+            @include pageParagraph;
+            font-size: 14px;
+        }
+
+        .course-name {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .course-link {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
+}

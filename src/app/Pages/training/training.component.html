@@ -24,22 +24,9 @@
 
     <div class="course-container">
         <h3> <i class="fa-solid fa-book"></i> Cursos</h3> 
-        <div class="course-cards">
-            <div class="course-top">
-                <h2>Title</h2>
-                <button (click)="openCloseButtonClick()"><i [ngClass]="openCloseArrowChange()"></i>  <i class=""></i></button>
-            </div>
-            <div class="course-bottom" *ngIf="openCloseCard">
-                <div class="course-name">
-                    <h3>Nome</h3>
-                    <p>curso nome</p>
-                </div>
-                <div class="course-link">
-                    <h3>Link</h3>
-                    <p>curso link</p>
-                </div>
-            </div>
-        </div>       
+           <div *ngFor="let item of training">
+            <app-course-card [course]="item"></app-course-card>
+           </div>
     </div>
 
     <div class="language-container">

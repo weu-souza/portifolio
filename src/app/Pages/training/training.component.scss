@@ -8,7 +8,7 @@ main {
 
     @media (max-width:800px) {
         grid-template-columns: 1fr;
-        
+
     }
 
     .title-container {
@@ -18,7 +18,7 @@ main {
 
         @media (max-width:800px) {
             margin: 0 20px;
-            
+
         }
 
         h1 {
@@ -39,7 +39,7 @@ main {
 
         @media (max-width:800px) {
             margin: 0 20px;
-            
+
         }
 
         .formation-container {
@@ -48,6 +48,7 @@ main {
             padding: 20px;
             background: $text-button;
             border-radius: 16px;
+
             .formation-top {
                 padding-bottom: 30px;
 
@@ -77,8 +78,8 @@ main {
         .course-container {
             display: flex;
             flex-direction: column;
-            gap:20px;
-            
+            gap: 20px;
+
             h3 {
                 display: flex;
                 gap: 10px;
@@ -86,72 +87,29 @@ main {
                 @include subtitle;
                 font-size: 20px;
             }
-            .course-cards{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                
-                .course-top{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
 
-                    h2{
-                        @include subtitle;
-                        font-size:20px;
-                    }
-                    button{
-                        @include button(3px,16px);
-                        background: $primary;
-                        border: none;
-                    }
-
-                }
-                .course-bottom{
-                    background: $text-button;
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 20px 0;
-                    border-radius: 16px;
-                    h3{
-                        font-size: 16px;
-                    }
-
-                    p{
-                        @include pageParagraph;
-                        font-size: 14px;
-                    }
-                    .course-name{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-                    }
-                    .course-link{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-                    }
-
-                }
-            }
+           
         }
 
         .language-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
+
             h3 {
                 display: flex;
                 gap: 10px;
                 align-items: center;
                 @include subtitle;
                 font-size: 20px;
-                
+
             }
-            .language-content{
+
+            .language-content {
                 display: flex;
                 justify-content: space-between;
-                p{
+
+                p {
                     @include pageParagraph;
                 }
             }
