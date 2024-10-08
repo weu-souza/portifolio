@@ -22,11 +22,14 @@
 
     </div>
 
-    <div class="course-container scrool">
+    <div class="course-container">
         <h3> <i class="fa-solid fa-book"></i> Cursos</h3> 
-           <div *ngFor="let item of training" >
+        <div class="course-container scrool">
+
+          <div *ngFor="let item of training" >
             <app-course-card [course]="item"></app-course-card>
-           </div>
+          </div>
+        </div>
     </div>
 
     <div class="language-container">
