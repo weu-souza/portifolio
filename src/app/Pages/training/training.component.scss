@@ -2,9 +2,7 @@
 @import '../../shared/utils/scss/variable.scss';
 
 main {
-    display: grid;
-    gap: 50px;
-    grid-template-columns: 500px auto;
+   @include containerPages;
     .scrool{
         padding: 0 20px;
         overflow-y: scroll;
@@ -25,43 +23,12 @@ main {
         border-radius: 30px;
       
       }
-
-    @media (max-width:800px) {
-        grid-template-columns: 1fr;
-
-    }
-
     .title-container {
-        display: flex;
-        flex-flow: column;
-        gap: 20px;
-
-        @media (max-width:800px) {
-            margin: 0 20px;
-
-        }
-
-        h1 {
-            @include Title;
-        }
-
-        p {
-            @include pageParagraph;
-        }
-
-
+      @include titleContainer;
     }
 
     .cards-container {
-        display: flex;
-        flex-flow: column;
-        gap: 50px;
-
-        @media (max-width:800px) {
-            margin: 0 20px;
-
-        }
-
+        @include cardContainer;
         .formation-container {
             display: flex;
             flex-flow: column;

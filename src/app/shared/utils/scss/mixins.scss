@@ -1,68 +1,114 @@
 @mixin roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin poppins-regular {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin poppins-medium {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin poppins-semibold {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin boxShadow($first, $second, $third, $fourth, $alpha) {
+  box-shadow: $first $second $third $fourth rgba($color: #737373, $alpha: $alpha);
+}
+
+@mixin button($paddingy, $paddingx) {
+  @include poppins-semibold;
+  font-size: 16px;
+  background: $buttonBg;
+  color: $text-button;
+
+  padding: $paddingy $paddingx;
+  border-radius: 32px;
+  align-self: flex-end;
+  @media (max-width:500px) {
+    align-self: center;
   }
-  
-  @mixin roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  cursor: pointer;
+}
+
+@mixin Title {
+  @include poppins-semibold;
+  color: $primary;
+  font-size: 50px;
+}
+
+@mixin subtitle {
+  @include poppins-semibold;
+  color: $primary;
+  font-size: 20px;
+}
+
+@mixin pageParagraph {
+  @include poppins-regular;
+  color: $primary;
+  font-size: 16px;
+  max-width: 50ch;
+}
+
+@mixin containerPages {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 500px auto;
+
+  @media (max-width:800px) {
+    grid-template-columns: 1fr;
   }
-  @mixin roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+}
+
+@mixin titleContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+
+  @media (max-width:800px) {
+    margin: 0 20px;
+
   }
 
-  @mixin poppins-regular {
-    font-family: "Poppins", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @mixin poppins-medium {
-    font-family: "Poppins", system-ui;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @mixin poppins-semibold {
-    font-family: "Poppins", system-ui;
-    font-weight: 600;
-    font-style: normal;
+  h1 {
+    @include Title;
   }
 
-  @mixin boxShadow($first,$second,$third,$fourth,$alpha){
-    box-shadow: $first $second $third $fourth rgba($color: #737373, $alpha: $alpha);
+  p {
+    @include pageParagraph;
   }
+}
 
-  @mixin button($paddingy, $paddingx){
-    @include poppins-semibold;
-    font-size: 16px;
-    background: $buttonBg;
-    color: $text-button;
+@mixin cardContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
 
-    padding: $paddingy $paddingx;
-    border-radius: 32px;
-    align-self: flex-end;
-    cursor: pointer;
-  }
+  @media (max-width:800px) {
+    margin: 0 20px;
 
-  @mixin Title{
-    @include poppins-semibold;
-      color: $primary;
-      font-size: 50px;
   }
-
-  @mixin subtitle{
-    @include poppins-semibold;
-    color: $primary;
-    font-size: 20px;
-  }
-  @mixin pageParagraph{
-    @include poppins-regular;
-      color: $primary;
-      font-size: 16px;
-      max-width: 50ch;
-  }
+  padding-bottom: 60px;
+}

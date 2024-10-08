@@ -1,0 +1,14 @@
+@import "../../shared/utils/scss/mixins.scss";
+@import "../../shared/utils/scss/variable.scss";
+
+main {
+    @include containerPages;
+
+    .title-container {
+        @include titleContainer;
+    }
+
+    .card-container {
+        @include cardContainer;
+    }
+}

@@ -5,16 +5,17 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
+  margin-bottom: 20px;
   gap: 40px;
+
   h4 {
    @include subtitle;
     text-align: center;
   }
-  .text-container {
-    display: flex;
-    gap: 50px;
-    flex-flow: column;
+
+
+  .title-container {
+    @include titleContainer;
     .social-container{
       display: flex;
       flex-flow: column;
@@ -45,7 +46,7 @@ section {
     }
   }
 
-  form {
+  .card-container {
     display: flex;
     flex-direction: column;
     background: $text-button;
