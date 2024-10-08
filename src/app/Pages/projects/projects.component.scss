@@ -1,0 +1,84 @@
+@import "../../shared/utils/scss/mixins.scss";
+@import "../../shared/utils/scss/variable.scss";
+
+main {
+    @include containerPages;
+
+    .title-container {
+        @include titleContainer;
+    }
+
+    .card-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        padding-bottom: 20px;
+        @media (max-width:500px) {
+            .cards{
+                margin: 0 20px;
+            }
+        }
+
+        .cards {
+            flex: 1 2 200px;
+            background: $text-button;
+            @include boxShadow(1px, 1px, 5px, 2px, 0.3);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border-radius: 10px;
+
+            h3 {
+                @include subtitle;
+            }
+
+            p {
+                @include pageParagraph;
+            }
+
+            a {
+                @include button(10px, 80px);
+            }
+        }
+    }
+}
+
+.scrool {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+
+.scrool::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+.scrool::-webkit-scrollbar-track {
+    margin-block: .5em;
+    border-radius: 100vw;
+}
+
+.scrool::-webkit-scrollbar-thumb {
+    background: #898989;
+    border-radius: 30px;
+
+}
+
+
+.scrool::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+.scrool::-webkit-scrollbar-track {
+    margin-block: .5em;
+    border-radius: 100vw;
+}
+
+.scrool::-webkit-scrollbar-thumb {
+    background: #898989;
+    border-radius: 30px;
+
+}

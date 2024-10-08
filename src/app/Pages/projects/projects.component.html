@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<main>
+  <section class="title-container">
+    <h1>Projetos</h1>
+    <p>
+      Aqui estão alguns projetos que eu fiz ao longo da minha jornada como dev.
+    </p>
+  </section>
+  <section class="card-container">
+    <div class="cards" *ngFor="let item of projeto">
+      <img [src]="item.imagem" [alt]="item.titulo" />
+      <h3>{{ item.titulo }}</h3>
+      <div class="scrool">
+        <p>{{ item.descricao }}</p>
+      </div>
+      <a [href]="item.link">Visite</a>
+    </div>
+  </section>
+</main>
