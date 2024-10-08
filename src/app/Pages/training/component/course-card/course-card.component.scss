@@ -42,6 +42,11 @@
         a{
             @include pageParagraph;
             font-size: 14px;
+            border-bottom: 1px solid $text-button;
+        }
+        a:hover{
+            border-bottom: 1px solid $primary;
+            
         }
 
         .course-name {
