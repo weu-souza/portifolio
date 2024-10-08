@@ -9,10 +9,16 @@
     <div class="cards" *ngFor="let item of projeto">
       <img [src]="item.imagem" [alt]="item.titulo" />
       <h3>{{ item.titulo }}</h3>
+      
       <div class="scrool">
         <p>{{ item.descricao }}</p>
       </div>
-      <a [href]="item.link">Visite</a>
+
+      <div class="button-container">
+        <a [href]="item.video">Video</a>
+        <a [href]="item.link">Github</a>
+      </div>
+
     </div>
   </section>
 </main>

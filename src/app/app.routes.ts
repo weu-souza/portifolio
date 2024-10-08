@@ -5,12 +5,14 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { ExperienceComponent } from './Pages/experience/experience.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { TrainingComponent } from './Pages/training/training.component';
+import { VideoComponent } from './Pages/Video/video.component';
 
 export const routes: Routes = [
     {path:"contato",component:ContactComponent},
     {path:"experiencia",component:ExperienceComponent},
     {path:"projetos",component:ProjectsComponent},
     {path:"formacao",component:TrainingComponent},
+    {path:"video/:title",component:VideoComponent},
     {path:"",component:HomeComponent},
 
     {path:"**",component:NotFoundComponent}
