@@ -12,12 +12,11 @@
 
         h2 {
             @include subtitle;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         button {
             @include button(3px, 16px);
-            background: $primary;
             border: none;
         }
 
@@ -32,6 +31,7 @@
         margin-bottom: 10px;
 
         h3 {
+            @include subtitle;
             font-size: 16px;
         }
 
