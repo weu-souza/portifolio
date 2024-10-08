@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { CourseCardComponent } from "./component/course-card/course-card.component";
-import { TrainingService } from './service/training.service';
-import { TrainingClass } from './Api/model';
+import { TrainingService } from './Api/service/training.service';
+import { TrainingClass } from './Api/model/model';
 
 @Component({
   selector: 'app-training',

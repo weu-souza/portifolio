@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import {TrainingClass } from '../../Api/model';
+import {TrainingClass } from '../../Api/model/model';
 
 @Component({
   selector: 'app-course-card',
