@@ -6,22 +6,22 @@ export interface Ivideo {
 export const videoObj: Ivideo[] = [
   {
     title: 'Lanchonete',
-    link: '/Lanchonete.mp4',
+    link: 'https://drive.google.com/file/d/18jrRttJWAaj2dDYyN9HHMl1fVUXIiHfT/preview',
   },
   {
     title: 'cook-book',
-    link: '/Cook-book.mp4',
+    link: 'https://drive.google.com/file/d/1Y9yl1FNVdk8RgseDcJxYaCyo-QJHEKEu/preview',
   },
   {
     title: 'doacao-animal',
-    link: '/Doacao-animal.mp4',
+    link: 'https://drive.google.com/file/d/1vBAN79RRQr6qKro9WvGeXV_2AKZW9Wqc/preview',
   },
   {
     title: 'compass-video',
-    link: '/compass-video.mp4',
+    link: 'https://drive.google.com/file/d/1eCisLemp66D9N3O0qW_Sqldgzf-UoQ3k/preview',
   },
   {
     title: 'furniro',
-    link: '/Furniro.mp4',
+    link: 'https://drive.google.com/file/d/1FL50NjROe1gJ4a1Yj7Om_80xu56Tjnov/preview',
   },
 ];

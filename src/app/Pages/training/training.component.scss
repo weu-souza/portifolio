@@ -4,9 +4,9 @@
 main {
    @include containerPages;
     .scrool{
-        padding: 0 20px;
+        padding: 10px 20px;
         overflow-y: scroll;
-        height: 350px;
+        height: 400px;
     }
     .scrool::-webkit-scrollbar {
         width: 6px;

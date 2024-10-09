@@ -16,12 +16,15 @@ main {
 
         @media (max-width:500px) {
             .cards {
-                margin: 0 20px;
+                margin: 0 10px;
             }
         }
 
         .cards {
             width: 400px;
+            @media (max-width:500px) {
+                width: 290px;
+            }
             background: $text-button;
             @include boxShadow(1px, 1px, 5px, 2px, 0.3);
             padding: 20px;
@@ -38,12 +41,15 @@ main {
 
             .button-container {
                 display: flex;
+                flex-flow: wrap row;
+                gap: 20px;
                 justify-content: space-between;
                 align-items: end;
-                // background: #000;
-
                 a {
                     @include button(10px, 30px);
+                    @media (max-width:500px) {
+                        @include button(10px, 20px);
+                    }
                 }
             }
 
@@ -88,4 +94,12 @@ main {
     background: #898989;
     border-radius: 30px;
 
+}
+
+.modal{
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+  
 }

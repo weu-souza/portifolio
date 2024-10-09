@@ -12,7 +12,6 @@ export const routes: Routes = [
     {path:"experiencia",component:ExperienceComponent},
     {path:"projetos",component:ProjectsComponent},
     {path:"formacao",component:TrainingComponent},
-    {path:"video/:title",component:VideoComponent},
     {path:"",component:HomeComponent},
 
     {path:"**",component:NotFoundComponent}
