@@ -1,4 +1,10 @@
 # NewPortifolio
+Uma nova versão do meu portifolio, com novas funcionalidades, eu explico todas as funcionalidades na home.
+
+# Email.js
+O email.js e uma api para enviar email sem a necessidade de configurar um back end para o mesmo você configura seu email no proprio <a href="https://www.emailjs.com/">site</a> do email.js e pode pesquisar na documentação deles para ter mais informações. caso precise de um tutorial existem esses dois <a href="https://www.youtube.com/watch?v=4LwtgjE9r44&t=610s">Ingles</a> | <a href="https://www.youtube.com/watch?v=Zbg1BHOVzRg&t=665s">Português</a> um em inglês e outro em português o em inglês e com angular, em português react o email.js e gratuito podendo receber até 200 emails na forma gratuita, sendo assim otimos para portifolios.
+
+-  para utilizar em seu projeto pegue as informações que você recebe no proprio site do email.js e arrume as variaveis, o uso do email.js está no repositorio contact, caso queira utilizar mais variaveis para o email renomeie as variaveis no arquivo que está no repositorio model em contact para as mesmas do seu projeto, e adicione mais campos no input.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
 
