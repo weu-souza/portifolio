@@ -28,3 +28,8 @@
     <app-video [title]="videoTitle"></app-video>
   </div>
 </p-dialog>
+<p-dialog  [modal]="true" [(visible)]="visible" class="div-modal" [style]="{ width: '800px' }">
+  <div *ngIf="visible" class="modal">
+    <app-video [title]="videoTitle"></app-video>
+  </div>
+</p-dialog>
