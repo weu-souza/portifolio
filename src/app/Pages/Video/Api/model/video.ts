@@ -6,22 +6,22 @@ export interface Ivideo {
 export const videoObj: Ivideo[] = [
   {
     title: 'Lanchonete',
-    link: '/public/Lanchonete.mp4',
+    link: '/Lanchonete.mp4',
   },
   {
     title: 'cook-book',
-    link: '/public/Cook-book.mp4',
+    link: '/Cook-book.mp4',
   },
   {
     title: 'doacao-animal',
-    link: '/public/Doacao-animal.mp4',
+    link: '/Doacao-animal.mp4',
   },
   {
     title: 'compass-video',
-    link: '/public/compass-video.mp4',
+    link: '/compass-video.mp4',
   },
   {
     title: 'furniro',
-    link: '/public/Furniro.mp4',
+    link: '/Furniro.mp4',
   },
 ];

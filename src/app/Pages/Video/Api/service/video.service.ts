@@ -9,7 +9,8 @@ export class VideoService {
   video: Ivideo[] = videoObj;
   constructor() {}
 
-  getVideo(name: string) {
-    return this.video.filter((res) => res.title === name);
+  getVideo(name: string):Observable<Ivideo[]> {
+    let items = this.video.filter((res) => res.title === name)
+    return of(items);
   }
 }

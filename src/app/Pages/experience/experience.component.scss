@@ -3,6 +3,9 @@
 
 main {
     @include containerPages;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
 
     .title-container {
         @include titleContainer;

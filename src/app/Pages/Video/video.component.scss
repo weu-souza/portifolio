@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    background: #000;
+    justify-content: center;
+
+    iframe {
+        width: 1500px;
+        height: 100vh;
+        border: none;
+    }
+}

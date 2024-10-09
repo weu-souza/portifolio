@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { VideoService } from './Api/service/video.service';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Ivideo } from './Api/model/video';
+import { Observable } from 'rxjs';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video',
@@ -12,12 +15,22 @@ import { CommonModule } from '@angular/common';
 })
 export class VideoComponent implements OnInit {
   title: string = '';
+  link:any = '';
+  private sanitizer = inject(DomSanitizer);
+  video!:Ivideo[];
   constructor(
     private videoService: VideoService,
     private route: ActivatedRoute
   ) {}
   ngOnInit(): void {
     this.title = String(this.route.snapshot.paramMap.get('title'));
-    console.log(this.videoService.getVideo(this.title));
+      this.videoService.getVideo(this.title).subscribe((res)=>{
+      this.video = res; 
+      this.video.map((value) =>{
+        this.link = this.sanitizer.bypassSecurityTrustResourceUrl(
+          value.link
+        );
+      })
+     })
   }
 }

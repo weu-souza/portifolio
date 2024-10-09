@@ -76,6 +76,9 @@
   display: grid;
   gap: 50px;
   grid-template-columns: 500px auto;
+  max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
 
   @media (max-width:800px) {
     grid-template-columns: 1fr;
