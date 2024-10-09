@@ -10,7 +10,7 @@ export const projetos: Iprojetos[] = [
   {
     imagem: '/lanchonete.png',
     titulo: 'Lanchonete',
-    video: '/video/Lanchonete',
+    video: 'Lanchonete',
     descricao:
       'O site oferece uma interface que simula o cardápio de uma lanchonete com 2 tipos de usuários, um usuário que\n' +
       '      vai a fazer a compra do produto e um usuário que vai fazer a adição dos itens do cardápio o sistema permite\n' +
@@ -22,7 +22,7 @@ export const projetos: Iprojetos[] = [
   {
     imagem: '/img-login.jpg',
     link: 'https://github.com/weu-souza/cook-book',
-    video: '/video/cook-book',
+    video: 'cook-book',
     descricao:
       'Já se viu em casa, em um tranquilo domingo, desejando preparar uma refeição diferenciada, mas sem saber onde encontrar inspiração ou como personalizar receitas de acordo com seu gosto? Ou ainda, ao deparar-se com uma receita online, sentiu a falta de um local adequado para organizá-la?\n' +
       '\n' +
@@ -32,7 +32,7 @@ export const projetos: Iprojetos[] = [
   {
     imagem: '/Dog_Img.png',
     link: 'https://github.com/weu-souza/sprint2-project',
-    video: '/video/doacao-animal',
+    video: 'doacao-animal',
     descricao:
       'Primeiro desafio criado na compass, o site e sobre um site de doação animal feito com html css e javascript',
     titulo: 'Doacao animal',
@@ -40,7 +40,7 @@ export const projetos: Iprojetos[] = [
   {
     imagem: '/bg-login.png',
     link: 'https://github.com/weu-souza/compass-video',
-    video: '/video/compass-video',
+    video: 'compass-video',
     descricao:
       'Segundo desafio criado na compass, o site e um sistema de streaming feito com react consumindo uma api do tmdb.',
     titulo: 'Compass video',
@@ -48,7 +48,7 @@ export const projetos: Iprojetos[] = [
   {
     imagem: '/Furniro-logo.png',
     link: 'https://github.com/weu-souza/Furniro',
-    video: '/video/furniro',
+    video: 'furniro',
     descricao:
       'terceiro desafio criado na compass, o site e e-commerce feito com react e testado com vitest, o site foi feito com um json criado por nos de produtos encontrados na internet para ser consumido com json server, as imagens foram guardadas em um bucket do amazon S3, e o site hospedado no amazon ec2',
     titulo: 'Furniro',

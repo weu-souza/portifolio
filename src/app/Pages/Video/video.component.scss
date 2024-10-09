@@ -1,11 +1,15 @@
-main {
-    display: flex;
-    background: #000;
-    justify-content: center;
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 
-    iframe {
-        width: 1500px;
-        height: 100vh;
-        border: none;
+    video {
+        object-fit: cover;
+        /* Faz com que o vídeo cubra toda a área, cortando se necessário */
+        width: 100%;
+        height: 100%;
     }
 }
