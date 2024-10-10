@@ -8,7 +8,7 @@ export interface Iprojetos {
 
 export const projetos: Iprojetos[] = [
   {
-    imagem: '/lanchonete.png',
+    imagem: 'assets/lanchonete.png',
     titulo: 'Lanchonete',
     video: 'Lanchonete',
     descricao:
@@ -20,7 +20,7 @@ export const projetos: Iprojetos[] = [
     link: 'https://github.com/weu-souza/lanchonete',
   },
   {
-    imagem: '/img-login.jpg',
+    imagem: 'assets/img-login.jpg',
     link: 'https://github.com/weu-souza/cook-book',
     video: 'cook-book',
     descricao:
@@ -30,7 +30,7 @@ export const projetos: Iprojetos[] = [
     titulo: 'cook book',
   },
   {
-    imagem: '/Dog_Img.png',
+    imagem: 'assets/Dog_Img.png',
     link: 'https://github.com/weu-souza/sprint2-project',
     video: 'doacao-animal',
     descricao:
@@ -38,7 +38,7 @@ export const projetos: Iprojetos[] = [
     titulo: 'Doacao animal',
   },
   {
-    imagem: '/bg-login.png',
+    imagem: 'assets/bg-login.png',
     link: 'https://github.com/weu-souza/compass-video',
     video: 'compass-video',
     descricao:
@@ -46,7 +46,7 @@ export const projetos: Iprojetos[] = [
     titulo: 'Compass video',
   },
   {
-    imagem: '/Furniro-logo.png',
+    imagem: 'assets/Furniro-logo.png',
     link: 'https://github.com/weu-souza/Furniro',
     video: 'furniro',
     descricao:
