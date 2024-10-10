@@ -24,6 +24,7 @@ main {
             width: 400px;
             @media (max-width:500px) {
                 width: 290px;
+                margin: 0 auto;
             }
             background: $text-button;
             @include boxShadow(1px, 1px, 5px, 2px, 0.3);

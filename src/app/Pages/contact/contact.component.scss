@@ -56,8 +56,10 @@ section {
     gap: 40px;
     max-width: 600px;
     width: 100%;
+   
     @media (max-width: 800px) {
       margin: 0 20px;
+      margin-bottom: 20px;
     }
     @include boxShadow(1px, 1px, 3px, 2px, 0.3);
     padding: 30px;
