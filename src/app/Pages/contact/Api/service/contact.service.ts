@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Contact } from '../model/contact';
 import emailjs from '@emailjs/browser';
-import { environment } from '../../../../../environments/environment';
+import { environment } from 'environments/environment'; 
 import { ToastServiceService } from '../../../../shared/utils/service/toast-service.service';
 @Injectable({
   providedIn: 'root',
