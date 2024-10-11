@@ -23,12 +23,12 @@ jobs:
 
       - name: Create environment file
         run: |
-          echo "export const environment = {" > src/environments/environment.prod.ts
-          echo "  production: true," >> src/environments/environment.prod.ts
-          echo "  serviceId: '${{ secrets.SERVICE_ID }}'," >> src/environments/environment.prod.ts
-          echo "  apiKey: '${{ secrets.API_KEY }}'," >> src/environments/environment.prod.ts
-          echo "  templateId: '${{ secrets.TEMPLATE_ID }}'" >> src/environments/environment.prod.ts
-          echo "};" >> src/environments/environment.prod.ts
+          echo "export const environment = { \
+            production: true, \
+            serviceId: '${{ secrets.SERVICE_ID }}', \
+            apiKey: '${{ secrets.API_KEY }}', \
+            templateId: '${{ secrets.TEMPLATE_ID }}' \
+          };" > src/environments/environment.prod.ts
 
       - name: Build project
         run: npm run build
