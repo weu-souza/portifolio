@@ -10,25 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Create environment file
-      run: |
-        echo "export const environment = { 
-          production: true, 
-          serviceId: '${{ secrets.SERVICE_ID }}',
-          apiKey: '${{ secrets.API_KEY }}',
-          templateId: '${{ secrets.TEMPLATE_ID }}' 
-        };" > src/environments/environment.prod.ts
+      - name: Create environment file
+        run: |
+          echo "export const environment = {" > src/environments/environment.prod.ts
+          echo "  production: true," >> src/environments/environment.prod.ts
+          echo "  serviceId: '${{ secrets.SERVICE_ID }}'," >> src/environments/environment.prod.ts
+          echo "  apiKey: '${{ secrets.API_KEY }}'," >> src/environments/environment.prod.ts
+          echo "  templateId: '${{ secrets.TEMPLATE_ID }}'" >> src/environments/environment.prod.ts
+          echo "};" >> src/environments/environment.prod.ts
 
-    - name: Build project
-      run: npm run build
+      - name: Build project
+        run: npm run build
