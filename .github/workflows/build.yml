@@ -28,7 +28,7 @@ jobs:
             SERVICE_ID: '${{ secrets.SERVICE_ID }}', \
             API_KEY: '${{ secrets.API_KEY }}', \
             TEMPLATE_ID: '${{ secrets.TEMPLATE_ID }}' \
-          };" > src/environments/environment.prod.ts
+          };" > src/environments/environment.ts
 
       - name: Build project
         run: npm run build
