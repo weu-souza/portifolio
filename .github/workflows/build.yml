@@ -1,0 +1,34 @@
+name: Build Angular Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Create environment file
+      run: |
+        echo "export const environment = { 
+          production: true, 
+          serviceId: '${{ secrets.SERVICE_ID }}',
+          apiKey: '${{ secrets.API_KEY }}',
+          templateId: '${{ secrets.TEMPLATE_ID }}' 
+        };" > src/environments/environment.prod.ts
+
+    - name: Build project
+      run: npm run build -- --prod
