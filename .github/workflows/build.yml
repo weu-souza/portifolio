@@ -25,9 +25,9 @@ jobs:
         run: |
           echo "export const environment = { \
             production: true, \
-            serviceId: '${{ secrets.SERVICE_ID }}', \
-            apiKey: '${{ secrets.API_KEY }}', \
-            templateId: '${{ secrets.TEMPLATE_ID }}' \
+            SERVICE_ID: '${{ secrets.SERVICE_ID }}', \
+            API_KEY: '${{ secrets.API_KEY }}', \
+            TEMPLATE_ID: '${{ secrets.TEMPLATE_ID }}' \
           };" > src/environments/environment.prod.ts
 
       - name: Build project
