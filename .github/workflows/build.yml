@@ -31,4 +31,4 @@ jobs:
         };" > src/environments/environment.prod.ts
 
     - name: Build project
-      run: npm run build -- --prod
+      run: npm run build
