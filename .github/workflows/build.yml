@@ -1,34 +1,40 @@
-name: Build Angular Project
+name: Deploy Angular to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - pages  
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Create environment file
-        run: |
-          echo "export const environment = { \
-            production: true, \
-            SERVICE_ID: '${{ secrets.SERVICE_ID }}', \
-            API_KEY: '${{ secrets.API_KEY }}', \
-            TEMPLATE_ID: '${{ secrets.TEMPLATE_ID }}' \
-          };" > src/environments/environment.prod.ts
+    - name: Create environment file
+      run: |
+        echo "export const environment = {" > src/environments/environment.prod.ts
+        echo "  production: true," >> src/environments/environment.prod.ts
+        echo "  serviceId: '${{ secrets.SERVICE_ID }}'," >> src/environments/environment.prod.ts
+        echo "  apiKey: '${{ secrets.API_KEY }}'," >> src/environments/environment.prod.ts
+        echo "  templateId: '${{ secrets.TEMPLATE_ID }}'" >> src/environments/environment.prod.ts
+        echo "};" >> src/environments/environment.prod.ts
 
-      - name: Build project
-        run: npm run build
+    - name: Build project
+      run: npm run build -- --prod
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist/portifolio
