@@ -31,7 +31,7 @@ jobs:
         echo "};" >> src/environments/environment.prod.ts
 
     - name: Build project
-      run: npm run build -- --prod
+      run: npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
