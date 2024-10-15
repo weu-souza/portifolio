@@ -2,42 +2,52 @@
   <section class="title-container">
     <h1>Formação</h1>
     <p>
-      Minha mais recente experiência acadêmica foi <strong>Sistemas de informação</strong>  que
+      Minha mais recente experiência acadêmica foi <strong>Sistemas de informação</strong> que
       estou cursando no goias. Além disso, mantenho-me sempre atualizado com
       cursos online e projetos praticos.
     </p>
   </section>
   <section class="cards-container">
     <div class="formation-container">
-        <div>
-            <div class="formation-top">
-                <h2>Bacharel</h2>
-            <h3>sistemas de informação</h3>
-            </div>
-            <div class="formation-bottom">
-                <p>IFG</p>
-                <p>2020 - atual</p>
-            </div>
+      <div>
+        <div class="formation-top">
+          <h2>Bacharel</h2>
+          <h3>sistemas de informação</h3>
         </div>
+        <div class="formation-bottom">
+          <p>IFG</p>
+          <p>2020 - atual</p>
+        </div>
+      </div>
 
     </div>
-
     <div class="course-container">
-        <h3> <i class="fa-solid fa-book"></i> Cursos</h3> 
-        <div class="course-container scrool">
+      <h3> <i class="fa-solid fa-scroll"></i> Certificações</h3>
+      <div class="course-container ">
 
-          <div *ngFor="let item of training" >
-            <app-course-card [course]="item"></app-course-card>
-          </div>
+        <div *ngFor="let certifications of certification">
+          <app-course-card [course]="certifications"></app-course-card>
         </div>
+      </div>
     </div>
+    <div class="course-container">
+      <h3> <i class="fa-solid fa-book"></i> Cursos</h3>
+      <div class="course-container scrool">
+
+        <div *ngFor="let item of training">
+          <app-course-card [course]="item"></app-course-card>
+        </div>
+      </div>
+    </div>
+
+   
 
     <div class="language-container">
-        <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
-        <div class="language-content">
-            <p>Ingles</p>
-            <p>Intermediário</p>
-        </div>
+      <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
+      <div class="language-content">
+        <p>Ingles</p>
+        <p>Intermediário</p>
+      </div>
     </div>
 
   </section>
