@@ -1,1 +1,4 @@
-<iframe [src]="link" allow="autoplay; encrypted-media" allowFullScreen ></iframe>
+<iframe [src]="link"  (load)="onIframeLoad()" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+<div *ngIf="loade" class="load-container">
+    <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+</div>

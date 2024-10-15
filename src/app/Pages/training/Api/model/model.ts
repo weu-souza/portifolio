@@ -124,13 +124,18 @@ export const TrainingObj: TrainingClass[] = [
     Title: 'Aws',
     Course: [
       {
-        name: 'AWS Certified Cloud Practitioner - certificação',
-        Link: 'https://drive.google.com/file/d/1ffSXwA7m75oFY7bGbwyXTNSs4jl6hzhi/view?usp=sharing',
+        name: 'AWS Partner: Cloud Economics Essentials',
+        Link: 'https://www.credly.com/badges/d94b3660-9c26-4855-a635-f9a34ab035d6',
         date: 2024,
       },
       {
-        name: 'AWS Certified Cloud Practitioner - badge',
-        Link: 'https://www.credly.com/badges/517f3234-45b1-4456-afac-54436df0fb6a/',
+        name: 'AWS Partner: Sales Accreditation',
+        Link: 'https://www.credly.com/badges/3acf8aa2-39af-43b6-8947-45d66384a0e0',
+        date: 2024,
+      },
+      {
+        name: 'AWS Partner: Technical Accredited',
+        Link: 'https://www.credly.com/badges/605a63cc-d426-42d1-8321-17c88a4a94a5',
         date: 2024,
       },
       {
@@ -141,3 +146,21 @@ export const TrainingObj: TrainingClass[] = [
     ],
   },
 ];
+
+export const Certification: TrainingClass[] = [
+  {
+    Title: 'Aws',
+    Course: [
+      {
+        name: 'AWS Certified Cloud Practitioner - certificação',
+        Link: 'https://drive.google.com/file/d/1ffSXwA7m75oFY7bGbwyXTNSs4jl6hzhi/view?usp=sharing',
+        date: 2024,
+      },
+      {
+        name: 'AWS Certified Cloud Practitioner - badge',
+        Link: 'https://www.credly.com/badges/517f3234-45b1-4456-afac-54436df0fb6a/',
+        date: 2024,
+      },
+    ],
+  },
+]

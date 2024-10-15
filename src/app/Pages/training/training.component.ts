@@ -13,19 +13,26 @@ import { TrainingClass } from './Api/model/model';
 })
 export class TrainingComponent implements OnInit {
   training:TrainingClass[] = []
+  certification:TrainingClass[] = []
   constructor(private trainingService:TrainingService){
 
   }
 
   ngOnInit(): void {
     this.getItem();
+    this.getCertification()
   }
 
   getItem(){
    this.trainingService.getTraining().subscribe(res =>{
     this.training = res
-    console.log(res)
    })
+  }
+
+  getCertification(){
+    this.trainingService.getCertification().subscribe(res =>{
+      this.certification = res
+     })
   }
 
 }
