@@ -1,3 +1,5 @@
+import { Title } from '@angular/platform-browser';
+
 export class TrainingClass {
   Title: string | undefined;
   Course: CourseClass[] | undefined;
@@ -163,4 +165,17 @@ export const Certification: TrainingClass[] = [
       },
     ],
   },
-]
+];
+
+export const English: TrainingClass[] = [
+  {
+    Title: 'Inglês',
+    Course: [
+      {
+        name: 'Intermediario',
+        Link: 'https://drive.google.com/file/d/1NY9Enbrh4eYMMag4c-90hJ08W_Jyc1uo/view?usp=sharing',
+        date: 2025,
+      },
+    ],
+  },
+];

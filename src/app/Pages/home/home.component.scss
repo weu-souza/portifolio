@@ -2,11 +2,12 @@
 @import '../../shared/utils/scss/variable.scss';
 
 main {
-    @include containerPages;
-    justify-content: space-around;
+    @include containerPages;   
 
     .title-container {
         @include titleContainer;
+        
+
     }
 
     .text-container {
@@ -18,13 +19,17 @@ main {
         h3 {
             @include subtitle;
             color: $buttonBg ;
+            
         }
 
-        ul {
-            li {
-                @include pageParagraph;
-                margin-left: 50px;
-                list-style: circle;
+        .skill-container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 20px;
+            padding: 20px;
+
+            img {
+                width: 100px;
             }
         }
 
@@ -32,4 +37,6 @@ main {
             @include pageParagraph;
         }
     }
+
+
 }

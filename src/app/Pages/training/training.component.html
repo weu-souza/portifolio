@@ -45,8 +45,10 @@
     <div class="language-container">
       <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
       <div class="language-content">
-        <p>Ingles</p>
-        <p>Intermediário</p>
+       
+      </div>
+      <div *ngFor="let ing of english">
+        <app-course-card [course]="ing"></app-course-card>
       </div>
     </div>
 
