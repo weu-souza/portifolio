@@ -2,11 +2,56 @@
 @import '../../shared/utils/scss/variable.scss';
 
 main {
-    @include containerPages;   
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    @media (max-width:800px) {
+        grid-template-columns: 1fr;
+    }
 
     .title-container {
-        @include titleContainer;
-        
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+
+        @media (max-width:800px) {
+            margin: 0 20px;
+
+        }
+
+        .hero {
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+            border: 1px solid #e2e2e2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            @include Title;
+            align-self: left;
+        }
+
+
+        p {
+            @include poppins-regular;
+            color: $primary;
+            text-align: justify;
+            font-size: 16px;
+            max-width: 100ch;
+        }
+
 
     }
 
@@ -19,7 +64,11 @@ main {
         h3 {
             @include subtitle;
             color: $buttonBg ;
-            
+
+        }
+         @media (max-width:800px) {
+            margin: 0px 20px 20px 20px;
+
         }
 
         .skill-container {
@@ -27,16 +76,23 @@ main {
             flex-flow: row wrap;
             gap: 20px;
             padding: 20px;
+            justify-content: center;
 
             img {
-                width: 100px;
-            }
+                width: 80px;
+                @media (max-width:500px) {
+                    width: 60px;
+                }
+
         }
 
-        p {
-            @include pageParagraph;
+            }
+            background-color: rgba(0, 0, 0, 0.04);
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+            border: 1px solid #e2e2e2;
+
+            border-radius: 10px;
         }
     }
 
 
-}
