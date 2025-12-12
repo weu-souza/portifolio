@@ -96,7 +96,7 @@ main {
 
                 li {
                     border-radius: 10px;
-                    background: #fff;
+                    background: $background-secondary;
                     padding: 5px;
                     @include pageParagraph;
                     font-size: 14px;

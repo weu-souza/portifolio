@@ -47,6 +47,7 @@ main {
         p {
             @include poppins-regular;
             color: $primary;
+            // color: $text-button;
             text-align: justify;
             font-size: 16px;
             max-width: 100ch;

@@ -1,6 +1,8 @@
-$primary:#373A40;
-$background:#686D76;
-$text-button:#EEEEEE;
-$buttonBg:#DC5F00;
-$border-color:#d9d9d9;
-
+$primary: light-dark(#373A40, #EEEEEE);
+$bg-header: #373A40;
+$text-header:#EEEEEE;
+$background: #686D76;
+$background-secondary: light-dark(#fff, #63656b);
+$text-button: light-dark(#EEEEEE, #373A40);
+$buttonBg: #DC5F00;
+$border-color: #d9d9d9;
