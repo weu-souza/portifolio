@@ -19,6 +19,8 @@
     "@angular/platform-browser-dynamic": "^19.2.17",
     "@angular/router": "^19.2.17",
     "@emailjs/browser": "^4.4.1",
+    "@primeng/themes": "^21.0.1",
+    "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
     "primeng": "^19.1.4",
     "rxjs": "~7.8.0",
