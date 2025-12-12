@@ -6,11 +6,10 @@ import { DialogModule } from 'primeng/dialog';
 import { VideoComponent } from "../Video/video.component";
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [CommonModule, DialogModule, VideoComponent],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss',
+    selector: 'app-projects',
+    imports: [CommonModule, DialogModule, VideoComponent],
+    templateUrl: './projects.component.html',
+    styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent implements OnInit {
   projeto: Iprojetos[] = [];

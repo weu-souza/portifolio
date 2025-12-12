@@ -6,12 +6,11 @@ import { CommonModule } from '@angular/common';
 import { ContactService } from './Api/service/contact.service';
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [CommonModule,ReactiveFormsModule],
-  providers:[ContactService],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+    selector: 'app-contact',
+    imports: [CommonModule, ReactiveFormsModule],
+    providers: [ContactService],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.scss'
 })
 export class ContactComponent implements OnInit {
   //@ts-ignore

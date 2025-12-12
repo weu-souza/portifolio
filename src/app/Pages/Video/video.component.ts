@@ -7,11 +7,10 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-video',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './video.component.html',
-  styleUrl: './video.component.scss',
+    selector: 'app-video',
+    imports: [CommonModule],
+    templateUrl: './video.component.html',
+    styleUrl: './video.component.scss'
 })
 export class VideoComponent implements OnInit {
   @Input() title: string = '';

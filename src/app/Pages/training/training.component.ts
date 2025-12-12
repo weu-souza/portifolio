@@ -5,11 +5,10 @@ import { TrainingService } from './Api/service/training.service';
 import { TrainingClass } from './Api/model/model';
 
 @Component({
-  selector: 'app-training',
-  standalone: true,
-  imports: [CommonModule, CourseCardComponent],
-  templateUrl: './training.component.html',
-  styleUrl: './training.component.scss',
+    selector: 'app-training',
+    imports: [CommonModule, CourseCardComponent],
+    templateUrl: './training.component.html',
+    styleUrl: './training.component.scss'
 })
 export class TrainingComponent implements OnInit {
   training: TrainingClass[] = [];
