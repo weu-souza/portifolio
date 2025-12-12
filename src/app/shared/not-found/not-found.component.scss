@@ -1,5 +1,5 @@
-@import '../utils/scss/mixins.scss';
-@import '../utils/scss/variable.scss';
+@use '../utils/scss/mixins.scss' as *;
+@use '../utils/scss/variable.scss' as *;
 
 div {
     display: flex;

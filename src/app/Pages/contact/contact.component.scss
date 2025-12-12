@@ -1,5 +1,5 @@
-@import "../../shared//utils/scss/mixins";
-@import "../../shared//utils/scss/variable";
+@use "../../shared//utils/scss/mixins" as *;
+@use "../../shared//utils/scss/variable" as var;
 
 section {
   display: flex;
@@ -38,16 +38,14 @@ section {
           font-size: 20px;
 
           i {
-            color: light-dark($background, $text-header);
+            color: light-dark(var.$background, var.$text-header);
 
           }
         }
       }
     }
 
-    @media (max-width: 800px) {
-      margin: 0 20px;
-    }
+
 
     h1 {
       @include Title
@@ -56,20 +54,20 @@ section {
     p {
       @include pageParagraph;
     }
+
+    @media (max-width: 800px) {
+      margin: 0 20px;
+    }
   }
 
   .card-container {
     display: flex;
     flex-direction: column;
-    background: $text-button;
+    background: var.$text-button;
     gap: 40px;
     max-width: 600px;
     width: 100%;
 
-    @media (max-width: 800px) {
-      margin: 0 20px;
-      margin-bottom: 20px;
-    }
 
     @include boxShadow(1px, 1px, 3px, 2px, 0.3);
     padding: 30px;
@@ -81,41 +79,47 @@ section {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      color: $primary;
+      color: var.$primary;
 
       input {
-        @include roboto-regular;
         font-size: 16px;
-        @include boxShadow(1px, 1px, 2px, 1px, 0.2);
         padding: 15px;
-        color: $primary;
-        border: 1px solid $border-color;
+        color: var.$primary;
+        border: 1px solid var.$border-color;
         border-radius: 5px;
+        @include roboto-regular;
+        @include boxShadow(1px, 1px, 2px, 1px, 0.2);
       }
 
       textarea {
-        @include roboto-regular;
-        @include boxShadow(1px, 1px, 2px, 1px, 0.2);
         font-weight: 400;
         font-size: 16px;
         padding: 8px;
         height: 100px;
         border-radius: 5px;
-        color: $primary;
+        color: var.$primary;
         outline: none;
         resize: none;
-        border: 1px solid $border-color;
+        border: 1px solid var.$border-color;
+        @include roboto-regular;
+        @include boxShadow(1px, 1px, 2px, 1px, 0.2);
       }
     }
 
     .button {
       @include button(15px, 80px)
     }
+
+
+    @media (max-width: 800px) {
+      margin: 0 20px;
+      margin-bottom: 20px;
+    }
   }
 }
 
 .erro {
   color: red;
-  @include poppins-regular;
   font-size: 14px;
+  @include poppins-regular;
 }

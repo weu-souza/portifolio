@@ -1,7 +1,7 @@
-@import '../../shared//utils/scss/variable.scss';
-@import '../../shared//utils/scss/mixins';
+@use '../../shared//utils/scss/variable.scss' as var;
+@use '../../shared//utils/scss/mixins' as *;
 header{
-    background: $bg-header;
+    background: var.$bg-header;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -17,11 +17,11 @@ nav{
     display: flex;
     justify-content: space-between;
     a{
-        @include poppins-semibold;
-        color: $text-header;
+        color: var.$text-header;
         display: flex;
         align-items: center;
         gap: 10px;
+        @include poppins-semibold;
 
     }
     ul{

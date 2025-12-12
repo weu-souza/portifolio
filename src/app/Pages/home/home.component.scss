@@ -1,5 +1,5 @@
-@import '../../shared/utils/scss/mixins.scss';
-@import '../../shared/utils/scss/variable.scss';
+@use '../../shared/utils/scss/mixins.scss' as *;
+@use '../../shared/utils/scss/variable.scss' as var;
 
 main {
     display: grid;
@@ -9,19 +9,14 @@ main {
     margin: 0 auto;
     padding-top: 80px;
 
-    @media (max-width:800px) {
-        grid-template-columns: 1fr;
-    }
+
 
     .title-container {
         display: flex;
         flex-flow: column;
         gap: 20px;
 
-        @media (max-width:800px) {
-            margin: 0 20px;
 
-        }
 
         .hero {
             background-size: cover;
@@ -39,20 +34,23 @@ main {
         }
 
         h1 {
-            @include Title;
             align-self: left;
+            @include Title;
         }
 
 
         p {
-            @include poppins-regular;
-            color: $primary;
-            // color: $text-button;
+            color: var.$primary;
             text-align: justify;
             font-size: 16px;
             max-width: 100ch;
+            @include poppins-regular;
         }
 
+        @media (max-width:800px) {
+            margin: 0 20px;
+
+        }
 
     }
 
@@ -62,15 +60,18 @@ main {
         gap: 20px;
         padding: 20px;
 
+        background-color: rgba(0, 0, 0, 0.04);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+        border: 1px solid #e2e2e2;
+
+        border-radius: 10px;
+
         h3 {
+            color: var.$buttonBg ;
             @include subtitle;
-            color: $buttonBg ;
 
         }
-         @media (max-width:800px) {
-            margin: 0px 20px 20px 20px;
 
-        }
 
         .skill-container {
             display: flex;
@@ -81,19 +82,25 @@ main {
 
             img {
                 width: 80px;
+
                 @media (max-width:500px) {
                     width: 60px;
                 }
 
+            }
+
         }
 
-            }
-            background-color: rgba(0, 0, 0, 0.04);
-            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-            border: 1px solid #e2e2e2;
 
-            border-radius: 10px;
+
+        @media (max-width:800px) {
+            margin: 0px 20px 20px 20px;
+
         }
     }
 
+    @media (max-width:800px) {
+        grid-template-columns: 1fr;
+    }
 
+}

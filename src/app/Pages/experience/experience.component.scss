@@ -1,11 +1,11 @@
-@import "../../shared/utils/scss/mixins.scss";
-@import "../../shared/utils/scss/variable.scss";
+@use "../../shared/utils/scss/mixins.scss" as *;
+@use "../../shared/utils/scss/variable.scss" as var;
 
 main {
-    @include containerPages;
     max-width: 1400px;
     margin: 0 auto;
     padding-top: 80px;
+    @include containerPages;
 
     .title-container {
         @include titleContainer;
@@ -14,12 +14,9 @@ main {
     .cards-container {
         display: flex;
         flex-direction: row;
-        @media (max-width:500px) {
-            flex-direction: column;
-            
-        }
+
         gap: 20px;
-        background: $text-button;
+        background: var.$text-button;
         padding: 20px;
         border-radius: 20px;
         margin-bottom: 30px;
@@ -30,13 +27,12 @@ main {
             gap: 10px;
 
             h3 {
-                @include subtitle;
                 font-size: 16px;
+                @include subtitle;
             }
 
             p {
                 width: 100%;
-                @include pageParagraph;
                 font-size: 14px;
                 text-align: justify;
 
@@ -58,6 +54,8 @@ main {
                     border-radius: 30px;
 
                 }
+
+                @include pageParagraph;
             }
 
             .scrool::-webkit-scrollbar {
@@ -83,8 +81,8 @@ main {
             gap: 20px;
 
             h3 {
-                @include subtitle;
                 font-size: 16px;
+                @include subtitle;
             }
 
 
@@ -96,10 +94,10 @@ main {
 
                 li {
                     border-radius: 10px;
-                    background: $background-secondary;
+                    background: var.$background-secondary;
                     padding: 5px;
-                    @include pageParagraph;
                     font-size: 14px;
+                    @include pageParagraph;
                 }
             }
 
@@ -109,9 +107,14 @@ main {
             align-self: flex-end;
 
             h3 {
-                @include subtitle;
                 font-size: 14px;
+                @include subtitle;
             }
+        }
+
+        @media (max-width:500px) {
+            flex-direction: column;
+
         }
     }
 }

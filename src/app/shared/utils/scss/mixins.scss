@@ -1,3 +1,5 @@
+@use 'variable.scss' as var;
+
 @mixin roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -39,36 +41,39 @@
 }
 
 @mixin button($paddingy, $paddingx) {
-  @include poppins-semibold;
   font-size: 16px;
-  background: $buttonBg;
-  color: $text-button;
+  background: var.$buttonBg;
+  color: var.$text-button;
+  @include poppins-semibold;
 
   padding: $paddingy $paddingx;
   border-radius: 32px;
   align-self: flex-end;
+  cursor: pointer;
+
   @media (max-width:500px) {
     align-self: center;
   }
-  cursor: pointer;
+
 }
 
 @mixin Title {
-  @include poppins-semibold;
-  color: $primary;
+  color: var.$primary;
   font-size: 50px;
+  @include poppins-semibold;
 }
 
 @mixin subtitle {
-  @include poppins-semibold;
-  color: $primary;
+  color: var.$primary;
   font-size: 20px;
+  @include poppins-semibold;
 }
+
 @mixin pageParagraph {
-  @include poppins-regular;
-  color: $primary;
+  color: var.$primary;
   font-size: 16px;
   max-width: 50ch;
+  @include poppins-regular;
 }
 
 @mixin containerPages {
@@ -76,8 +81,8 @@
   gap: 50px;
   grid-template-columns: 500px auto;
   max-width: 1400px;
-    margin: 0 auto;
-    padding-top: 80px;
+  margin: 0 auto;
+  padding-top: 80px;
 
   @media (max-width:800px) {
     grid-template-columns: 1fr;
@@ -88,12 +93,6 @@
   display: flex;
   flex-flow: column;
   gap: 20px;
-
-  @media (max-width:800px) {
-    margin: 0 20px;
-
-  }
-
   h1 {
     @include Title;
   }
@@ -101,16 +100,22 @@
   p {
     @include pageParagraph;
   }
+
+  @media (max-width:800px) {
+    margin: 0 20px;
+
+  }
 }
 
 @mixin cardContainer {
   display: flex;
   flex-flow: column;
   gap: 50px;
+  padding-bottom: 60px;
 
   @media (max-width:800px) {
     margin: 0 20px;
 
   }
-  padding-bottom: 60px;
+
 }

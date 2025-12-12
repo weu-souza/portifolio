@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-root',
-    imports: [CommonModule, RouterOutlet, HeaderComponent, ToastModule, RouterLink],
+    imports: [CommonModule, RouterOutlet, HeaderComponent, ToastModule],
     providers: [MessageService, ToastServiceService],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'

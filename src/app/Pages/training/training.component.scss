@@ -1,5 +1,5 @@
-@import '../../shared/utils/scss/mixins.scss';
-@import '../../shared/utils/scss/variable.scss';
+@use '../../shared/utils/scss/mixins.scss' as *;
+@use '../../shared/utils/scss/variable.scss' as var;
 
 main {
    @include containerPages;
@@ -33,7 +33,7 @@ main {
             display: flex;
             flex-flow: column;
             padding: 20px;
-            background: $text-button;
+            background: var.$text-button;
             border-radius: 16px;
 
             .formation-top {
@@ -44,8 +44,8 @@ main {
                 }
 
                 h3 {
-                    @include subtitle;
                     font-size: 18px;
+                    @include subtitle;
                 }
             }
 
@@ -71,8 +71,8 @@ main {
                 display: flex;
                 gap: 10px;
                 align-items: center;
-                @include subtitle;
                 font-size: 20px;
+                @include subtitle;
             }
 
            
@@ -87,8 +87,8 @@ main {
                 display: flex;
                 gap: 10px;
                 align-items: center;
-                @include subtitle;
                 font-size: 20px;
+                @include subtitle;
 
             }
 

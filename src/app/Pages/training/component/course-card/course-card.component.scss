@@ -1,5 +1,5 @@
-@import '../../../../shared/utils/scss/mixins.scss';
-@import '../../../../shared/utils/scss/variable.scss';
+@use '../../../../shared/utils/scss/mixins.scss' as *;
+@use '../../../../shared/utils/scss/variable.scss' as var;
 .course-cards {
     display: flex;
     flex-direction: column;
@@ -9,26 +9,26 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: $text-button;
-        @include boxShadow(1px, 1px, 5px, 1px, 0.3);
-
+        background: var.$text-button;
+        
         padding: 10px 20px;
         border-radius: 20px;
+        @include boxShadow(1px, 1px, 5px, 1px, 0.3);
 
         h2 {
-            @include subtitle;
             font-size: 18px;
+            @include subtitle;
         }
 
         button {
-            @include button(3px, 16px);
             border: none;
+            @include button(3px, 16px);
         }
 
     }
 
     .course-bottom {
-        background: $text-button;
+        background: var.$text-button;
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -36,21 +36,21 @@
         margin-bottom: 10px;
 
         h3 {
-            @include subtitle;
             font-size: 16px;
+            @include subtitle;
         }
 
         p {
-            @include pageParagraph;
             font-size: 14px;
+            @include pageParagraph;
         }
         a{
-            @include pageParagraph;
             font-size: 14px;
-            border-bottom: 1px solid $text-button;
+            border-bottom: 1px solid var.$text-button;
+            @include pageParagraph;
         }
         a:hover{
-            border-bottom: 1px solid $primary;
+            border-bottom: 1px solid var.$primary;
             
         }
 
