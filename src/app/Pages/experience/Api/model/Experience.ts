@@ -3,5 +3,5 @@ export interface Iexperiencia {
   cargo: string;
   descricao: string;
   linguagem: string[];
-  ano: number;
+  exp_ano: number;
 }

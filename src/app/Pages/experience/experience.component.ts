@@ -17,10 +17,9 @@ export class ExperienceComponent implements OnInit {
   constructor(private languageService: LanguageService) {}
 
   ngOnInit(): void {
-    const t = this.languageService.tFunction();
-
-    t('experience.exp_card').subscribe((exp: Iexperiencia[]) => {
+    this.t('experience.exp_card').subscribe((exp: Iexperiencia[]) => {
       this.experiencia = exp;
+      console.log(exp);
     });
   }
 }

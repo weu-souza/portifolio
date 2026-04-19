@@ -2,7 +2,10 @@
   "home": {
     "home_title": "About Me",
     "home_text": "Hello, my name is Weuller. Welcome to my portfolio! Here you will find information about my professional and academic journey in the world of development.\n\nTo get to know me better, I will share a bit about my experience. Currently, I am {{age}} years old and have been studying development for about five years. I started my formation in 2020 at the Federal Institute of Goiás (IFG), where I had my first contact with the field through solving basic algorithmic problems.\n\nIn 2021, I was introduced to web development, a field that I imagined to be completely different until then. Since then, I have been specializing in creating applications. In 2024, I began preparing for the AWS CLF-C02 certification. As part of the learning process, I deployed a Linux EC2 server on AWS and put a website online — a valuable experience, even if the project is no longer active. In the same year, I successfully obtained the certification.\n\nThis portfolio reflects my growth and dedication to the field. Feel free to explore my projects and learn more about my work!",
-    "home_skills": "Skills"
+    "home_skills": "Skills",
+    "dia": "27",
+    "mes": "11",
+    "ano": "1997"
   },
   "experience": {
     "exp_title": "Experience",
@@ -22,7 +25,7 @@
           "git & github",
           "Scrum"
         ],
-        "ano": 2024
+        "exp_ano": "2024"
       },
       {
         "titulo": "Compass.uol",
@@ -37,7 +40,7 @@
           "git & github",
           "Scrum"
         ],
-        "ano": 2025
+        "exp_ano": "2025"
       }
     ]
   },
@@ -103,8 +106,8 @@
   },
   "training": {
     "training_title": "Formation",
-    "course_card_title":"Name",
-    "course_card_year":"Year",
+    "course_card_title": "Name",
+    "course_card_year": "Year",
     "training_description": "My most recent academic experience was completing a degree in Information Systems in 2026 at IFG. Additionally, I keep myself updated with courses and certifications to enhance my skills and knowledge in the field of development.",
     "formation": {
       "title_h2": "Bachelor",
