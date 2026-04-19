@@ -1,11 +1,25 @@
-<header >
-  <nav>
-      <a routerLink="/"><i class="fa-solid fa-house"></i> <span class="header-mobile">Inicio</span></a>
-    <ul>
-      <li><a routerLink="/experiencia"><i class="fa-solid fa-briefcase"></i> <span class="header-mobile">Experiencia</span></a></li>
-      <li><a routerLink="/formacao"><i class="fa-solid fa-book"></i> <span class="header-mobile">Formação</span> </a></li>
-      <li><a routerLink="/projetos"><i class="fa-regular fa-folder"></i> <span class="header-mobile">Projetos</span> </a></li>
-      <li><a routerLink="/contato"><i class="fa-solid fa-envelope"></i> <span class="header-mobile">Contato</span> </a></li>
-    </ul>
-  </nav>
+<header>
+  <div class="header-container">
+    <div class="button-home"> <a routerLink="/"><i class="fa-solid fa-house"></i> <span class="header-mobile">{{ t('header.text.home') | async }}</span></a></div>
+    <nav>
+      <ul>
+        <li><a routerLink="/experiencia"><i class="fa-solid fa-briefcase"></i> <span
+              class="header-mobile">{{ t('header.text.experience') | async }}</span></a></li>
+        <li><a routerLink="/formacao"><i class="fa-solid fa-book"></i> <span class="header-mobile">{{ t('header.text.training') | async }}</span> </a>
+        </li>
+        <li><a routerLink="/projetos"><i class="fa-regular fa-folder"></i> <span class="header-mobile">{{ t('header.text.projects') | async }}</span>
+          </a></li>
+        <li><a routerLink="/contato"><i class="fa-solid fa-envelope"></i> <span class="header-mobile">{{ t('header.text.contact') | async }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="language-toggle">
+      <p-toggleswitch [(ngModel)]="isEnglish" (ngModelChange)="trocarIdioma($event ? 'en' : 'pt')">
+        <ng-template #handle let-checked="checked">
+          <img [src]="checked ? 'assets/flags/en.png' : 'assets/flags/br.png'" width="20" />
+        </ng-template>
+      </p-toggleswitch>
+    </div>
+  </div>
 </header>

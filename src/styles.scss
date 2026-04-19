@@ -1,5 +1,18 @@
+@use './app/shared/utils/scss/variable.scss' as var;
+@use './app/shared/utils/scss/mixins.scss' as *;
+
 .p-toast * {
   font-family: 'Inter', sans-serif !important;
+}
+
+.p-toggleswitch-slider {
+  background-color: var.$text-header !important;
+  border: 2px solid var.$green-br !important;
+}
+
+.p-toggleswitch.p-toggleswitch-checked .p-toggleswitch-slider {
+  background-color: var.$text-header !important;
+  border: 2px solid var.$red-eu !important;
 }
 
 /* reset css */

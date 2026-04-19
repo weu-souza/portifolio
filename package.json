@@ -37,6 +37,8 @@
     "@angular/platform-browser-dynamic": "19.2.20",
     "@angular/router": "19.2.20",
     "@emailjs/browser": "^4.4.1",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "@primeng/themes": "^19.0.0",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",

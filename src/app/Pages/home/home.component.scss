@@ -19,8 +19,6 @@ main {
 
 
         .hero {
-            background-size: cover;
-            background-position: center;
             padding: 20px;
             gap: 20px;
             background-color: rgba(0, 0, 0, 0.04);
@@ -43,7 +41,8 @@ main {
             color: var.$primary;
             text-align: justify;
             font-size: 16px;
-            max-width: 100ch;
+            max-width: 120ch;
+            padding: 10px;
             @include poppins-regular;
         }
 

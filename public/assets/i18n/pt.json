@@ -1,0 +1,56 @@
+{
+  "home": {
+    "home_title": "Sobre mim",
+    "home_text": "Olá, meu nome é Weuller. Seja bem-vindo(a) ao meu portfólio! Aqui você encontrará informações sobre minha trajetória profissional e acadêmica no mundo do desenvolvimento.\n\nPara que possamos nos conhecer melhor, vou compartilhar um pouco sobre minha jornada. Atualmente, tenho {{age}} anos e estudo desenvolvimento há cerca de cinco anos. Iniciei minha formação em 2020 no Instituto Federal de Goiás (IFG), onde tive meu primeiro contato com a área por meio da resolução de problemas algorítmicos básicos.\n\nEm 2021, fui apresentado ao desenvolvimento web, um campo que, até então, eu imaginava ser completamente distinto. Desde então, venho me especializando na criação de aplicações. Em 2024, comecei a me preparar para a certificação AWS CLF-C02. Como parte do processo de aprendizagem, implantei um servidor Linux EC2 na AWS e coloquei um site no ar — uma experiência valiosa, mesmo que o projeto não esteja mais ativo. No mesmo ano, obtive a certificação com sucesso.\n\nEste portfólio reflete minha evolução e dedicação à área. Fique à vontade para explorar meus projetos e conhecer mais sobre meu trabalho!",
+    "home_skills": "Tecnologias"
+  },
+  "experience": {
+    "exp_title": "Experiencia",
+    "exp_description": "Aqui estão algumas expêriencias que Obtive no mercado de trabalho.",
+    "exp_card": [
+      {
+        "titulo": "Compass.uol",
+        "cargo": "Desenvolvedor Front End Estagio",
+        "descricao": "Na Compass, atuei no desenvolvimento de um sistema de e-commerce, utilizando React com TypeScript para construção da interface. Implementei testes unitários com Jest para garantir a qualidade do código e utilizei Tailwind CSS para estilização ágil e responsiva.  No deploy da aplicação, configurei uma  instância EC2 com Apache para hospedagem  na nuvem AWS, além de integrar um bucket S3  para armazenamento das imagens do projeto.  Minha experiência combina desenvolvimento front-end moderno com práticas de cloud computing, sempre buscando soluções eficientes e escaláveis.",
+        "linguagem": [
+          "React",
+          "Html",
+          "Css",
+          "Javascript",
+          "Typescript",
+          "Aws",
+          "git & github",
+          "Scrum"
+        ],
+        "ano": 2024
+      },
+      {
+        "titulo": "Compass.uol",
+        "cargo": "Desenvolvedor Front End",
+        "descricao": "atuo na Vivo no desenvolvimento de interfaces no aplicativo utilizando React, contribuindo na construção de layouts e na evolução contínua da experiência do usuário. realizo testes unitários com Jest, testes de componentes com Cypress e testes de mutação com Stryker, garantindo qualidade, confiabilidade e estabilidade do código. também participo da criação de novas telas e da manutenção de funcionalidades existentes, atuando na correção de problemas e melhorias de performance e usabilidade.",
+        "linguagem": [
+          "React",
+          "Html",
+          "Css",
+          "Javascript",
+          "Typescript",
+          "git & github",
+          "Scrum"
+        ],
+        "ano": 2025
+      }
+    ]
+  },
+  "projects": {},
+  "contact": {},
+  "training": {},
+  "header": {
+    "text": {
+      "home": "Início",
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "contact": "Contato",
+      "training": "Formação"
+    }
+  }
+}
