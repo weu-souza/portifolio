@@ -6,13 +6,13 @@
 }
 
 .p-toggleswitch-slider {
-  background-color: var.$text-header !important;
-  border: 2px solid var.$green-br !important;
+  background-color: var.$green-br !important;
+  border: 2px solid var.$text-header !important;
 }
 
 .p-toggleswitch.p-toggleswitch-checked .p-toggleswitch-slider {
-  background-color: var.$text-header !important;
-  border: 2px solid var.$red-eu !important;
+  background-color: var.$red-eu !important;
+  border: 2px solid var.$text-header !important;
 }
 
 /* reset css */
