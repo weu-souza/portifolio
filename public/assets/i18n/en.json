@@ -1,0 +1,56 @@
+{
+  "home": {
+    "home_title": "About Me",
+    "home_text": "Hello, my name is Weuller. Welcome to my portfolio! Here you will find information about my professional and academic journey in the world of development.\n\nTo get to know me better, I will share a bit about my experience. Currently, I am {{age}} years old and have been studying development for about five years. I started my formation in 2020 at the Federal Institute of Goiás (IFG), where I had my first contact with the field through solving basic algorithmic problems.\n\nIn 2021, I was introduced to web development, a field that I imagined to be completely different until then. Since then, I have been specializing in creating applications. In 2024, I began preparing for the AWS CLF-C02 certification. As part of the learning process, I deployed a Linux EC2 server on AWS and put a website online — a valuable experience, even if the project is no longer active. In the same year, I successfully obtained the certification.\n\nThis portfolio reflects my growth and dedication to the field. Feel free to explore my projects and learn more about my work!",
+    "home_skills": "Skills"
+  },
+  "experience": {
+    "exp_title": "Experience",
+    "exp_description": "Here are some experiences I have gained in the job market.",
+    "exp_card": [
+      {
+        "titulo": "Compass.uol",
+        "cargo": "Front end Developer Intern",
+        "descricao": "At Compass, I worked on developing an e-commerce system, using React with TypeScript to build the interface. I implemented unit tests with Jest to ensure code quality and used Tailwind CSS for agile and responsive styling. During the application deployment, I configured an EC2 instance with Apache for hosting in the AWS cloud, in addition to integrating an S3 bucket for storing project images. My experience combines modern front-end development with cloud computing practices, always seeking efficient and scalable solutions.",
+        "linguagem": [
+          "React",
+          "Html",
+          "Css",
+          "Javascript",
+          "Typescript",
+          "Aws",
+          "git & github",
+          "Scrum"
+        ],
+        "ano": 2024
+      },
+      {
+        "titulo": "Compass.uol",
+        "cargo": "Front End Developer",
+        "descricao": "I work at Telefônica (Vivo) developing interfaces for the application using React, contributing to the creation of layouts and the continuous improvement of the user experience. I implement unit tests using Jest, component tests with Cypress, and mutation tests with Stryker, ensuring code quality, reliability, and stability. I also participate in the creation of new screens and the maintenance of existing features, working on bug fixes and improvements in performance and usability.",
+        "linguagem": [
+          "React",
+          "Html",
+          "Css",
+          "Javascript",
+          "Typescript",
+          "git & github",
+          "Scrum"
+        ],
+        "ano": 2025
+      }
+    ]
+  },
+  "projects": {},
+  "contact": {},
+  "training": {},
+  "header": {
+    "text": {
+      "home": "Home",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact",
+      "training": "Education"
+    }
+  }
+}

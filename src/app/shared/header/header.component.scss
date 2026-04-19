@@ -1,34 +1,48 @@
 @use '../../shared//utils/scss/variable.scss' as var;
 @use '../../shared//utils/scss/mixins' as *;
-header{
-    background: var.$bg-header;
+
+header {
+  background: var.$bg-header;
+
+  .header-container {
+    margin: 0 auto;
     padding: 30px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  a {
+    color: var.$text-header;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include poppins-semibold;
+  }
+
+  nav {
+    flex: 1;
     display: flex;
     justify-content: center;
-    @media (max-width:500px) {
-        .header-mobile{
-            display: none;
-        }
-    }
-}
-nav{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    a{
-        color: var.$text-header;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        @include poppins-semibold;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      gap: 30px;
+      align-items: center;
 
     }
-    ul{
-        display: flex;
-        flex-flow: row wrap;
-        gap: 40px;
-        flex-flow: row wrap;
-        
+  }
+
+  .language-toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+    .header-mobile {
+      display: none;
     }
+  }
 }

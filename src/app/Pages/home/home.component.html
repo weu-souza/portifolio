@@ -1,34 +1,13 @@
 <main>
     <section class="title-container ">
-        <h1>Sobre mim</h1>
+        <h1>{{ t('home.home_title') | async }}</h1>
         <div class="hero">
 
-            <p>Olá, meu nome é Weuller. Seja bem-vindo(a) ao meu portfólio! Aqui você encontrará informações sobre minha
-                trajetória profissional e acadêmica no mundo do desenvolvimento.
-
-                Para que possamos nos conhecer melhor, vou compartilhar um pouco sobre minha jornada. Atualmente, tenho
-                27
-                anos e estudo desenvolvimento há cerca de cinco anos. Iniciei minha formação em 2020 no Instituto
-                Federal de
-                Goiás (IFG), onde tive meu primeiro contato com a área por meio da resolução de problemas algorítmicos
-                básicos.
-
-                Em 2021, fui apresentado ao desenvolvimento web, um campo que, até então, eu imaginava ser completamente
-                distinto. Desde então, venho me especializando na criação de aplicações. Em 2024, comecei a me preparar
-                para
-                a certificação AWS CLF-C02. Como parte do processo de aprendizagem, implantei um servidor Linux EC2 na
-                AWS e
-                coloquei um site no ar — uma experiência valiosa, mesmo que o projeto não esteja mais ativo. No mesmo
-                ano,
-                obtive a certificação com sucesso.
-
-                Este portfólio reflete minha evolução e dedicação à área. Fique à vontade para explorar meus projetos e
-                conhecer mais sobre meu trabalho!
-            </p>
+            <p>{{ t('home.home_text', { age: calculcateAgeWithMonth() }) | async }}</p>
         </div>
     </section>
     <section class="text-container">
-        <h3>Skills</h3>
+        <h3>{{ t('home.home_skills') | async }}</h3>
         <div class="skill-container">
             <div class="image-container">
                 <img
