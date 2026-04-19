@@ -8,7 +8,6 @@ export class LanguageService {
 
   init() {
     const lang = sessionStorage.getItem('lang') || 'pt';
-    this.translate.setDefaultLang(lang);
     this.translate.use(lang);
   }
 
