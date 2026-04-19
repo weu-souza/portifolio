@@ -9,7 +9,6 @@ on:
       - main
 
 jobs:
-
   test:
     runs-on: ubuntu-latest
 
@@ -18,13 +17,12 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - run: npm ci
 
       - name: Run tests
         run: npm run test -- --watch=false --browsers=ChromeHeadless
-
 
   audit:
     runs-on: ubuntu-latest
@@ -34,13 +32,12 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - run: npm ci
 
       - name: Check vulnerabilities
         run: npm audit --audit-level=high
-
 
   build-and-deploy:
     needs: [test, audit]
@@ -51,18 +48,15 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - run: npm ci
 
-      - name: Create environment file
+      - name: Inject secrets into environment.prod.ts
         run: |
-          echo "export const environment = {" > src/environments/environment.prod.ts
-          echo "  production: true," >> src/environments/environment.prod.ts
-          echo "  SERVICE_ID: '${{ secrets.SERVICE_ID }}'," >> src/environments/environment.prod.ts
-          echo "  API_KEY: '${{ secrets.API_KEY }}'," >> src/environments/environment.prod.ts
-          echo "  TEMPLATE_ID: '${{ secrets.TEMPLATE_ID }}'" >> src/environments/environment.prod.ts
-          echo "};" >> src/environments/environment.prod.ts
+          sed -i "s/SERVICE_ID: ''.*/SERVICE_ID: '${{ secrets.SERVICE_ID }}',/" src/environments/environment.prod.ts
+          sed -i "s/API_KEY: ''.*/API_KEY: '${{ secrets.API_KEY }}',/" src/environments/environment.prod.ts
+          sed -i "s/TEMPLATE_ID: ''.*/TEMPLATE_ID: '${{ secrets.TEMPLATE_ID }}'/" src/environments/environment.prod.ts
 
       - name: Build project
         run: npm run build -- --configuration=production --base-href=/
