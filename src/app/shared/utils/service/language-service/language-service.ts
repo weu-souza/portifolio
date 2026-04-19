@@ -7,18 +7,18 @@ export class LanguageService {
   constructor(private translate: TranslateService) {}
 
   init() {
-    const lang = localStorage.getItem('lang') || 'pt';
+    const lang = sessionStorage.getItem('lang') || 'pt';
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
   }
 
   setLanguage(lang: string) {
-    localStorage.setItem('lang', lang);
+    sessionStorage.setItem('lang', lang);
     this.translate.use(lang);
   }
 
   getCurrentLang() {
-    return this.translate.currentLang;
+    return this.translate.getCurrentLang();
   }
   tFunction() {
     return (key: string, params?: any) => this.translate.stream(key, params);

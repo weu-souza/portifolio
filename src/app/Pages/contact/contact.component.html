@@ -1,14 +1,13 @@
 <section>
   <div class="title-container">
     <div>
-      <h1>Contato</h1>
+      <h1>{{t('contact.contact_title') | async}}</h1>
       <p>
-        Caso tenha gostado do meu trabalho, Entre em contato comigo e marcamos
-        uma conversa.
+        {{t('contact.contact_desctiption') | async}}
       </p>
     </div>
     <div class="social-container">
-      <h3>Minhas redes sociais</h3>
+      <h3>{{t('contact.social_title') | async}}</h3>
       <ul class="footer-contato flex align-self-end">
         <li class="contact-icons">
           <a href="https://wa.me/5561982995230" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
@@ -29,38 +28,37 @@
   </div>
 
   <form [formGroup]="contact" (ngSubmit)="send()" class="card-container">
-    <h4>Me mande um email</h4>
+    <h4>{{t('contact.form-title') | async}}</h4>
     <label for="">
-      <span>Nome</span>
-      <input type="text" formControlName="from_name" placeholder="Seu nome" />
+      <span>{{t('contact.form-name') | async}}</span>
+      <input type="text" formControlName="from_name" placeholder="{{t('contact.form-name-placeholder') | async}}" />
 
       <span *ngIf=" contact.controls['from_name'].invalid &&
            (contact.controls['from_name'].touched || contact.controls['from_name'].dirty)">
-        <span class="erro">nome precisa ser preenchido</span>
+        <span class="erro">{{t('contact.form-name-error') | async}}</span>
       </span>
 
     </label>
     <label for="">
-      <span>Email</span>
-      <input type="text" formControlName="email" placeholder="Seu email para contato" />
+      <span>{{t('contact.form-email') | async}}</span>
+      <input type="text" formControlName="email" placeholder="{{t('contact.form-email-placeholder') | async}}" />
       <span *ngIf="contact.controls['email'].errors &&
            (contact.controls['email'].touched || contact.controls['email'].dirty)">
-        <span class="erro" *ngIf="contact.controls['email'].errors['required']">Email precisa ser preenchido.</span>
-        <span *ngIf="contact.controls['email'].errors['email']" class="erro">Digite um email valido</span>
+        <span class="erro" *ngIf="contact.controls['email'].errors['required']">{{t('contact.form-email-required') | async}}</span>
+        <span *ngIf="contact.controls['email'].errors['email']" class="erro">{{t('contact.form-email-invalid') | async}}</span>
       </span>
 
     </label>
     <label for="">
-      <span>Mensagem</span>
-      <textarea type="text" formControlName="message" placeholder="Digite sua mensagem..."></textarea>
+      <span>{{t('contact.form-message') | async}}</span>
+      <textarea type="text" formControlName="message" placeholder="{{t('contact.form-message-placeholder') | async}}"></textarea>
 
       <span *ngIf="contact.controls['message'].errors &&
            (contact.controls['message'].touched || contact.controls['message'].dirty)">
-        <span *ngIf="contact.controls['message'].errors['required']" class="erro">Mensagem precisa ser
-          preenchida.</span>
+        <span *ngIf="contact.controls['message'].errors['required']" class="erro">{{t('contact.form-message-error') | async}}</span>
       </span>
 
     </label>
-    <input class="button" type="submit" />
+    <input class="button" type="submit" value="{{t('contact.form-button') | async}}"/>
   </form>
 </section>

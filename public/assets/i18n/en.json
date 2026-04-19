@@ -81,10 +81,26 @@
         "titulo": "Furniro"
       }
     ],
-    "video_button":"Video",
-    "github_buton":"Github"
+    "video_button": "Video",
+    "github_buton": "Github"
   },
-  "contact": {},
+  "contact": {
+    "contact_title": "Contact",
+    "contact_desctiption": "If you liked my work, get in touch with me and we can schedule a conversation.",
+    "social_title": "My social media",
+    "form-title": "Send me a message",
+    "form-name": "Name",
+    "form-name-error": "Name is required.",
+    "form-name-placeholder": "Your name",
+    "form-email-invalid": "Invalid email address.",
+    "form-email": "Email",
+    "form-email-placeholder": "Your email for contact",
+    "form-email-required": "Email is required.",
+    "form-message": "Message",
+    "form-message-placeholder": "Type your message...",
+    "form-message-error": "Message is required.",
+    "form-button": "Send"
+  },
   "training": {},
   "header": {
     "text": {
