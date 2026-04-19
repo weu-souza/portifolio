@@ -84,7 +84,23 @@
     "video_button": "Video",
     "github_buton": "Github"
   },
-  "contact": {},
+  "contact": {
+    "contact_title": "Contato",
+    "contact_desctiption": "Caso tenha gostado do meu trabalho, Entre em contato comigo e marcamos uma conversa.",
+    "social_title": "Minhas redes sociais",
+    "form-title": "Me mande um email",
+    "form-name": "Nome",
+    "form-name-error": "Nome precisa ser preenchido",
+    "form-name-placeholder": "Seu nome",
+    "form-email-placeholder": "Seu email para contato",
+    "form-email-required": "Email precisa ser preenchido",
+    "form-email-invalid": "Digite um email valido",
+    "form-email": "Email",
+    "form-message": "Mensagem",
+    "form-message-error": "Mensagem precisa ser preenchida",
+    "form-message-placeholder": "Digite sua mensagem...",
+    "form-button": "Enviar"
+  },
   "training": {},
   "header": {
     "text": {

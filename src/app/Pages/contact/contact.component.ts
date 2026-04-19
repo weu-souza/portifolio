@@ -4,6 +4,7 @@ import { Contact } from './Api/model/contact';
 import { ToastServiceService } from '../../shared/utils/service/toast-service.service';
 import { CommonModule } from '@angular/common';
 import { ContactService } from './Api/service/contact.service';
+import { LanguageService } from 'app/shared/utils/service/language-service/language-service';
 
 @Component({
     selector: 'app-contact',
@@ -19,8 +20,13 @@ export class ContactComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private toast:ToastServiceService,
-    private contactService:ContactService
+    private contactService:ContactService,
+    private languageService: LanguageService
   ) {}
+
+  t(key: string, params?: any) {
+    return this.languageService.tFunction()(key, params);
+  }
 
   ngOnInit(): void {
     this.createForm();
