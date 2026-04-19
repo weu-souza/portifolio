@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build --configuration=production --base-href='https://weuller.com.br/'",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:single":"ng test --watch=false --browsers=ChromeHeadless"
   },
   "overrides": {
     "@angular/core": "19.2.20",
