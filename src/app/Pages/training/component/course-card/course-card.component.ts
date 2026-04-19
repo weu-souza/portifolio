@@ -10,6 +10,8 @@ import {TrainingClass } from '../../Api/model/model';
 })
 export class CourseCardComponent {
   @Input() course:TrainingClass = new TrainingClass;
+  @Input() name:string = "";
+  @Input() year:string = "";
   openCloseCard:boolean = false;
 
   openCloseArrowChange(){

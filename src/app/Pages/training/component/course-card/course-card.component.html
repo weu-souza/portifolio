@@ -5,11 +5,11 @@
     </div>
     <div class="course-bottom" *ngIf="openCloseCard" >
         <div class="course-name">
-            <h3>Nome</h3>
+            <h3>{{name}}</h3>
             <p *ngFor="let course of course.Course"><a href="{{course.Link}}" target="_blank">{{course.name}}</a></p>
         </div>
         <div class="course-link">
-            <h3>Ano</h3>
+            <h3>{{year}}</h3>
             <p *ngFor="let course of course.Course">{{course.date}}</p>
         </div>
     </div>
