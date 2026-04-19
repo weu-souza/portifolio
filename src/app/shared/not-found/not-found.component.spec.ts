@@ -8,9 +8,8 @@ describe('NotFoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NotFoundComponent]
-    })
-    .compileComponents();
+      imports: [NotFoundComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NotFoundComponent);
     component = fixture.componentInstance;
@@ -19,5 +18,19 @@ describe('NotFoundComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render the not found title', () => {
+    const title = fixture.nativeElement.querySelector('h1');
+
+    expect(title).not.toBeNull();
+    expect(title.textContent?.toLowerCase()).toContain('p');
+    expect(title.textContent?.toLowerCase()).toContain('encontrada');
+  });
+
+  it('should render the illustration svg', () => {
+    const svg = fixture.nativeElement.querySelector('svg');
+
+    expect(svg).not.toBeNull();
   });
 });
