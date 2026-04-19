@@ -9,5 +9,5 @@
       "environments/*": ["src/environments/*"]
     }
   },
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  "include": ["src/**/*.ts"]
 }
