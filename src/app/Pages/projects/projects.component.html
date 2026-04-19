@@ -1,8 +1,8 @@
 <main>
   <section class="title-container">
-    <h1>Projetos</h1>
+    <h1>{{ t('projects.projects_title') | async }}</h1>
     <p>
-      Aqui estão alguns projetos que eu fiz ao longo da minha jornada como dev.
+      {{ t('projects.projects_description') | async }}
     </p>
    
   </section>
@@ -16,8 +16,8 @@
       </div>
 
       <div class="button-container">
-        <a (click)="openModal(item.video)">Video</a>
-        <a [href]="item.link" target="_blank">Github</a>
+        <a (click)="openModal(item.video)">{{ t('projects.video_button') | async }}</a>
+        <a [href]="item.link" target="_blank">{{ t('projects.github_buton') | async }}</a>
       </div>
 
     </div>

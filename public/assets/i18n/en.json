@@ -41,7 +41,49 @@
       }
     ]
   },
-  "projects": {},
+  "projects": {
+    "projects_title": "Projects",
+    "projects_description": "Here are some projects I've done along my journey as a developer.",
+    "projects_card": [
+      {
+        "imagem": "assets/lanchonete.png",
+        "titulo": "snack bar",
+        "video": "Lanchonete",
+        "descricao": "The site offers an interface that simulates the menu of a snack bar with 2 types of users, one user who will make the purchase of the product and one user who will make the addition of items from the menu. The system allows adding a category for each product, adding products to their categories and adding promotions. Items that the client wishes to add can be added to the cart and the registration of both types of users can be made.",
+        "link": "https://github.com/weu-souza/lanchonete"
+      },
+      {
+        "imagem": "assets/img-login.jpg",
+        "link": "https://github.com/weu-souza/cook-book",
+        "video": "cook-book",
+        "descricao": "Have you ever been at home on a peaceful Sunday, wishing to prepare a differentiated meal but not knowing where to find inspiration or how to personalize recipes according to your taste? Or perhaps, when encountering an online recipe, you felt the lack of an appropriate place to organize it? I present the Cook Book project, a solution designed for culinary enthusiasts who want a more modern approach. Enough with dusty recipe books on the shelf! With the Cook Book, we offer an intuitive space to save and explore recipes whenever the desire to try something new arises. Unleash your passion for cooking.",
+        "titulo": "cook book"
+      },
+      {
+        "imagem": "assets/Dog_Img.png",
+        "link": "https://github.com/weu-souza/sprint2-project",
+        "video": "doacao-animal",
+        "descricao": "First challenge created at Compass, the site is about a pet adoption website made with html, css and javascript",
+        "titulo": "Pet Adoption"
+      },
+      {
+        "imagem": "assets/bg-login.png",
+        "link": "https://github.com/weu-souza/compass-video",
+        "video": "compass-video",
+        "descricao": "Second challenge created at Compass, the site is a streaming system made with react consuming a tmdb api.",
+        "titulo": "Compass video"
+      },
+      {
+        "imagem": "assets/Furniro-logo.png",
+        "link": "https://github.com/weu-souza/Furniro",
+        "video": "furniro",
+        "descricao": "Third challenge created at Compass, the site is an e-commerce made with react and tested with vitest, the site was made with a json created by us of products found on the internet to be consumed with json server, the images were stored in a bucket of amazon S3, and the site hosted on amazon ec2",
+        "titulo": "Furniro"
+      }
+    ],
+    "video_button":"Video",
+    "github_buton":"Github"
+  },
   "contact": {},
   "training": {},
   "header": {
