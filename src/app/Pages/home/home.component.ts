@@ -8,6 +8,7 @@ import { LanguageService } from 'app/shared/utils/service/language-service/langu
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
+
 export class HomeComponent implements OnInit {
   ano: number = 0;
   mes: number = 0;

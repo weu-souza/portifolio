@@ -96,10 +96,8 @@
               }
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/aura-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.css",
               "node_modules/primeflex/primeflex.css"
             ],
             "scripts": []
