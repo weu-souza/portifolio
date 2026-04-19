@@ -19,7 +19,6 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.t('experience.exp_card').subscribe((exp: Iexperiencia[]) => {
       this.experiencia = exp;
-      console.log(exp);
     });
   }
 }
