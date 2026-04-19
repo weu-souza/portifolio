@@ -1,7 +1,7 @@
 import { TestBed, fakeAsync, flushMicrotasks } from '@angular/core/testing';
 import emailjs from '@emailjs/browser';
 
-import { environment } from 'environments/environment.prod';
+import { environment } from 'environments/environment';
 import { ToastServiceService } from '../../../../shared/utils/service/toast-service.service';
 import { Contact } from '../model/contact';
 import { ContactService } from './contact.service';
